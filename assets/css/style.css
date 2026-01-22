@@ -6,3 +6,29 @@
     --font-bebas: "Bebas Neue", system-ui, sans-serif;
     --font-spartan: "League Spartan", system-ui, sans-serif;
 }
+
+.colorido {
+    @apply text-[#CB6CE6]
+}
+
+.opcao_menu {
+    @apply font-roboto font-normal
+}
+
+.botao {
+    @apply bg-[#CB6CE6] px-2 py-0.5 font-roboto text-[15px] shadow-[0_0_15px_#cb6ce6e6] font-[490] text-[#F5F5F5]
+}
+
+.botao_primario {
+    @apply rounded-r-2xl
+}
+
+.botao_secundario {
+    @apply rounded-l-2xl
+}
+
+/* .botao_secundario */
+
+.linha_menu_hamburguer {
+    @apply bg-[#F5F5F5] w-7 h-0.5 rounded-4xl nth-[1]:w-4.5
+}
