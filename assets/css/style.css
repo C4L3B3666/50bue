@@ -16,19 +16,65 @@
 }
 
 .botao {
-    @apply bg-[#CB6CE6] px-2 py-0.5 font-roboto text-[15px] shadow-[0_0_15px_#cb6ce6e6] font-[490] text-[#F5F5F5]
+    @apply bg-[#CB6CE6] px-2 py-0.5 font-roboto text-[14px] rounded-full shadow-[0_0_15px_#cb6ce6e6] font-normal text-[#F5F5F5] cursor-pointer border border-[#CB6CE6];
 }
 
 .botao_primario {
-    @apply rounded-r-2xl
-}
-
-.botao_secundario {
     @apply rounded-l-2xl
 }
 
-/* .botao_secundario */
+.botao_secundario {
+    @apply rounded-r-2xl 
+}
 
 .linha_menu_hamburguer {
     @apply bg-[#F5F5F5] w-7 h-0.5 rounded-4xl nth-[1]:w-4.5
+}
+
+.secao {
+    @apply px-9
+}
+
+.titulo_secao {
+    @apply text-5xl text-[#F5F5F5] font-spartan font-bold
+}
+
+.texto_secao {
+    @apply text-[#F5F5F5] font-roboto font-light
+}
+
+.efeito_luz {
+    @apply w-64 h-64 rounded-full bg-[radial-gradient(circle,#CB6CE6_0%,#0D0D0D_100%)] -z-10 opacity-60 blur-2xl
+}
+
+.efeito_luz_ativar_numero {
+    @apply absolute
+}
+
+.efeito_luz_ativar_numero_cima {
+    @apply -top-45 -right-15
+}
+
+.efeito_luz_ativar_numero_baixo {
+    @apply -bottom-45 -left-25
+}
+
+.botao_ativar_numero {
+    @apply bg-transparent shadow-[0] border-[#80808078] opacity-60
+}
+
+.botao_ativar_numero.ativo {
+    @apply bg-[#CB6CE6] border-[#CB6CE6] opacity-100 shadow-[0_0_15px_#cb6ce6e6]
+}
+
+.input_selecionar_numero {
+    @apply hidden
+}
+
+.label_selecionar_numero {
+    @apply text-[#F5F5F5] opacity-15 border-2 border-[#F5F5F5] py-1 px-3.5 rounded-full font-spartan font-bold text-[15pt] cursor-pointer hover:opacity-100 hover:border-[#CB6CE6] hover:bg-[#CB6CE6] hover:shadow-[0_0_15px_#cb6ce6e6]
+}
+
+.input_selecionar_numero:checked + .label_selecionar_numero {
+    @apply opacity-100 border-[#CB6CE6] bg-[#CB6CE6] shadow-[0_0_15px_#cb6ce6e6]
 }
