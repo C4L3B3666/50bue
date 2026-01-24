@@ -84,11 +84,16 @@
 }
 
 .posicao_ranking {
-    @apply font-spartan text-[#F5F5F5] text-4xl font-semibold
+    @apply font-spartan text-[#F5F5F5] text-4xl font-semibold opacity-40
 }
 
 .nome_participante_ranking {
-    @apply text-[#F5F5F5] font-spartan text-3xl font-semibold
+    @apply text-[#F5F5F5] font-spartan text-3xl font-semibold opacity-40
+}
+
+.posicao_ranking_1, 
+.nome_participante_ranking_1 {
+    @apply text-[#F5F5F5] opacity-100
 }
 
 .linha_horizontal_ranking {
