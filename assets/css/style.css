@@ -135,3 +135,23 @@
 .texto_brevemente {
     @apply text-[#f5f5f5] font-spartan uppercase text-3xl text-center font-bold animate-pulse
 }
+
+.card_fundadores {
+    @apply flex flex-col items-center gap-2 border border-[#8080802a] rounded-2xl p-8 w-11/12 top-20 sticky bg-[#0D0D0D]
+}
+
+.img_fundador {
+    @apply pointer-events-none
+}
+
+.nome_fundador {
+    @apply text-[#CB6CE6] text-3xl font-spartan font-bold 
+}
+
+.cargo_fundador {
+    @apply text-[#F5F5F5] font-spartan opacity-65 text-center 
+}
+
+.hr_fundador {
+    @apply border-[#808080] w-1/2 
+}
