@@ -107,3 +107,15 @@
 .efeito_luz_ranking {
     @apply absolute -bottom-48
 }
+
+.carousel_botao {
+    @apply absolute text-2xl w-9
+}
+
+.carousel_botao.anterior {
+    @apply left-4
+}
+
+.carousel_botao.proximo {
+    @apply right-2
+}
