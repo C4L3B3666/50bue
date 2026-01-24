@@ -180,6 +180,9 @@
   }
 }
 @layer utilities {
+  .pointer-events-none {
+    pointer-events: none;
+  }
   .absolute {
     position: absolute;
   }
@@ -222,8 +225,17 @@
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
+  .h-64 {
+    height: calc(var(--spacing) * 64);
+  }
+  .h-96 {
+    height: calc(var(--spacing) * 96);
+  }
   .h-screen {
     height: 100vh;
+  }
+  .w-96 {
+    width: calc(var(--spacing) * 96);
   }
   .w-full {
     width: 100%;
@@ -237,6 +249,15 @@
   .translate-x-full {
     --tw-translate-x: 100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-rotate-2 {
+    rotate: calc(2deg * -1);
+  }
+  .-rotate-3 {
+    rotate: calc(3deg * -1);
+  }
+  .rotate-3 {
+    rotate: 3deg;
   }
   .cursor-pointer {
     cursor: pointer;
@@ -283,6 +304,9 @@
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
+  .rounded-\[75\%_30\%_30\%_70\%\/60\%_40\%_60\%_40\%\] {
+    border-radius: 75% 30% 30% 70%/60% 40% 60% 40%;
+  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -301,6 +325,9 @@
   }
   .bg-\[\#0d0d0dad\] {
     background-color: #0d0d0dad;
+  }
+  .bg-\[linear-gradient\(35deg\,\#CB6CE6_0\%\,\#0D0D0D_100\%\)\] {
+    background-image: linear-gradient(35deg,#CB6CE6 0%,#0D0D0D 100%);
   }
   .bg-\[linear-gradient\(90deg\,\#F5F5F5_0\%\,\#B0B0B0_50\%\,\#A0A0A0_100\%\)\] {
     background-image: linear-gradient(90deg,#F5F5F5 0%,#B0B0B0 50%,#A0A0A0 100%);
@@ -328,6 +355,9 @@
   }
   .px-9 {
     padding-inline: calc(var(--spacing) * 9);
+  }
+  .pt-6 {
+    padding-top: calc(var(--spacing) * 6);
   }
   .pt-16 {
     padding-top: calc(var(--spacing) * 16);
@@ -549,7 +579,7 @@
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
   color: #F5F5F5;
-  opacity: 40%;
+  opacity: 70%;
 }
 .nome_participante_ranking {
   font-family: var(--font-spartan);
@@ -558,7 +588,7 @@
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
   color: #F5F5F5;
-  opacity: 40%;
+  opacity: 70%;
 }
 .posicao_ranking_1, .nome_participante_ranking_1 {
   color: #F5F5F5;
