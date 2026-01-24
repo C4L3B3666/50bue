@@ -47,18 +47,6 @@
     @apply w-64 h-64 rounded-full bg-[radial-gradient(circle,#CB6CE6_0%,#0D0D0D_100%)] -z-10 opacity-60 blur-2xl
 }
 
-.efeito_luz_ativar_numero {
-    @apply absolute
-}
-
-.efeito_luz_ativar_numero_cima {
-    @apply -top-45 -right-15
-}
-
-.efeito_luz_ativar_numero_baixo {
-    @apply -bottom-45 -left-25
-}
-
 .botao_ativar_numero {
     @apply bg-transparent shadow-[0] border-[#80808078] opacity-60
 }
@@ -118,4 +106,32 @@
 
 .carousel_botao.proximo {
     @apply right-2
+}
+
+.card_premio {
+    @apply border border-[#8080802a] p-4 rounded-2xl w-80 
+}
+
+.texto_premio_card_premio {
+    @apply text-[#F5F5F5] opacity-30 font-bold font-spartan uppercase text-[20px] 
+}
+
+.nome_premio_card_premio {
+    @apply text-[#CB6CE6] font-spartan font-bold uppercase text-3xl
+}
+
+.texto_premio {
+    @apply text-[#F5F5F5] font-roboto mb-2 
+}
+
+.imagem_premio {
+    @apply w-64 m-auto
+}
+
+.breves_premios {
+    @apply text-center text-[#F5F5F5] opacity-30 font-bold font-spartan uppercase text-[20px] mt-2
+}
+
+.texto_brevemente {
+    @apply text-[#f5f5f5] font-spartan uppercase text-3xl text-center font-bold animate-pulse
 }

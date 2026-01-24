@@ -24,7 +24,7 @@
             </nav>
 
             <nav class="flex items-center gap-4">
-                <a href="#"><button class="botao botao_primario">Ganhar - Fácil e Rápido</button></a>
+                <a href="#"><button class="botao botao_primario animate-bounce">Ganhar - Fácil e Rápido</button></a>
 
                 <button aria-label="Abrir menu hambúrguer" aria-expanded="false" class="flex flex-col gap-1 items-end cursor-pointer">
                     <span class="linha_menu_hamburguer"></span>
@@ -52,7 +52,7 @@
             </div>
             <nav>
                 <form action="#" class="border border-[#8080802a] p-3 rounded-2xl relative overflow-hidden">
-                    <div class="efeito_luz efeito_luz_ativar_numero efeito_luz_ativar_numero_cima"></div>
+                    <div class="efeito_luz absolute -top-45 -right-15"></div>
 
                     <div>
                         <nav class="border border-[#80808078] flex justify-between gap-2 p-1 rounded-full flex-wrap items-center">
@@ -377,7 +377,7 @@
                         <button class="botao">Desbloquear Oportunidade Agora</button>
                     </div>
 
-                    <div class="efeito_luz efeito_luz_ativar_numero efeito_luz_ativar_numero_baixo"></div>
+                    <div class="efeito_luz absolute -bottom-45 -left-25"></div>
                 </form>
             </nav>
         </section>
@@ -431,22 +431,83 @@
                 <p class="texto_secao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laboriosam et mollitia assumenda vel praesentium.</p>
             </div>
             <nav>
-                <nav class="flex items-center justify-center">
+                <nav class="flex items-center">
                     <button class="carousel_botao botao anterior" aria-label="Anterior">&#10094;</button>
 
-                    <nav>
-                        <div class="border border-[#8080802a] p-4 rounded-2xl">
-                            <h4 class="text-[#F5F5F5] opacity-30 font-bold font-spartan uppercase text-[20px]">prémio</h4>
-                            <h3 class="text-[#CB6CE6] font-spartan font-bold uppercase text-3xl">1.5 milhão de kwanzas</h3>
-                            <p class="text-[#F5F5F5] font-roboto mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amagnam ipsa volupttem earum harum officiis voluptate erspiciatis ut.  quibusdam officia hic.</p>
-                            <img src="assets/img/test.png" alt="imagem do prémio 1.5 milhão de kwanzas" class="w-64 m-auto">
-                            <p class="text-center text-[#F5F5F5] opacity-30 font-bold font-spartan uppercase text-[20px] mt-2">kumbu, kumbu e mais kumbu</p>
+                    <nav class="flex w-max gap-4 mt-3">
+                        <div class="card_premio">
+                            <h4 class="texto_premio_card_premio">prémio</h4>
+                            <h3 class="nome_premio_card_premio">1.5 milhão de kwanzas</h3>
+                            <p class="texto_premio">Lorem ipsum, dolor sit amet adipisicing elit. Amagnam ipsa volupttem earum harum officiis voluptate erspiciatis ut.</p>
+                            <img src="assets/img/test.png" alt="imagem do prémio 1.5 milhão de kwanzas" class="imagem_premio">
+                            <p class="breves_premios">kumbu, kumbu e mais kumbu</p>
+                        </div>
+
+                        <div class="card_premio">
+                            <h4 class="texto_premio_card_premio">prémio</h4>
+                            <h3 class="nome_premio_card_premio">carro 0km</h3>
+                            <p class="texto_premio">Lorem ipsum, dolor sit amet adipisicing elit. Amagnam ipsa volupttem earum harum officiis voluptate erspiciatis ut.</p>
+                            <img src="assets/img/test.png" alt="imagem do prémio 1.5 milhão de kwanzas" class="imagem_premio">
+                            <p class="breves_premios">chega de boleias e paragens cheias</p>
+                        </div>
+
+                        <div class="card_premio">
+                            <h4 class="texto_premio_card_premio">prémio</h4>
+                            <h3 class="nome_premio_card_premio">cesta básica por 6 meses</h3>
+                            <p class="texto_premio">Lorem ipsum, dolor sit amet adipisicing elit. Amagnam ipsa volupttem earum harum officiis voluptate erspiciatis ut.</p>
+                            <img src="assets/img/test.png" alt="imagem do prémio 1.5 milhão de kwanzas" class="imagem_premio">
+                            <p class="breves_premios">agora é só comer sem parar</p>
+                        </div>
+
+                        <div class="card_premio">
+                            <h4 class="texto_premio_card_premio">prémio</h4>
+                            <h3 class="nome_premio_card_premio">telefone novo</h3>
+                            <p class="texto_premio">Lorem ipsum, dolor sit amet adipisicing elit. Amagnam ipsa volupttem earum harum officiis voluptate erspiciatis ut.</p>
+                            <img src="assets/img/test.png" alt="imagem do prémio 1.5 milhão de kwanzas" class="imagem_premio">
+                            <p class="breves_premios">um pro max novo para você</p>
+                        </div>
+
+                        <div class="card_premio">
+                            <h4 class="texto_premio_card_premio">prémio</h4>
+                            <h3 class="nome_premio_card_premio">vale-presente</h3>
+                            <p class="texto_premio">Lorem ipsum, dolor sit amet adipisicing elit. Amagnam ipsa volupttem earum harum officiis voluptate erspiciatis ut.</p>
+                            <img src="assets/img/test.png" alt="imagem do prémio 1.5 milhão de kwanzas" class="imagem_premio">
+                            <p class="breves_premios">faça compras ilimitadas</p>
+                        </div>
+
+                        <div class="card_premio">
+                            <h4 class="texto_premio_card_premio">prémio</h4>
+                            <h3 class="nome_premio_card_premio">propina por 1 ano</h3>
+                            <p class="texto_premio">Lorem ipsum, dolor sit amet adipisicing elit. Amagnam ipsa volupttem earum harum officiis voluptate erspiciatis ut.</p>
+                            <img src="assets/img/test.png" alt="imagem do prémio 1.5 milhão de kwanzas" class="imagem_premio">
+                            <p class="breves_premios">apoiamos a sua formação</p>
+                        </div>
+
+                        <div class="card_premio">
+                            <h4 class="texto_premio_card_premio">prémio</h4>
+                            <h3 class="nome_premio_card_premio">prémio misterioso</h3>
+                            <p class="texto_premio">Lorem ipsum, dolor sit amet adipisicing elit. Amagnam ipsa volupttem earum harum officiis voluptate erspiciatis ut.</p>
+                            <img src="assets/img/test.png" alt="imagem do prémio 1.5 milhão de kwanzas" class="imagem_premio">
+                            <p class="breves_premios">participe e descubra o prémio</p>
                         </div>
                     </nav>
 
                     <button class="carousel_botao botao proximo" aria-label="Próximo">&#10095;</button>
                 </nav>
             </nav>
+        </section>
+
+        <section class="secao mt-11">
+            <div>
+                <h2 class="titulo_secao">Seja o próximo a transformar sua vida com o 50BUÉ.</h2>
+                <p class="texto_secao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laboriosam et mollitia assumenda vel praesentium.</p>
+            </div>
+            <div class="relative h-125 border border-[#8080802a] rounded-2xl flex items-center justify-center mt-4 p-3.5">
+                <div class="efeito_luz absolute -top-20 -right-45 blur-3xl"></div>
+                <div class="video">
+                    <h6 class="texto_brevemente">os vídeos emocionantes estarão aqui</h6>
+                </div>
+            </div>
         </section>
     </main>
 </body>
