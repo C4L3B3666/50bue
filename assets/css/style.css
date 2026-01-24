@@ -72,9 +72,33 @@
 }
 
 .label_selecionar_numero {
-    @apply text-[#F5F5F5] opacity-15 border-2 border-[#F5F5F5] py-1 px-3.5 rounded-full font-spartan font-bold text-[15pt] cursor-pointer hover:opacity-100 hover:border-[#CB6CE6] hover:bg-[#CB6CE6] hover:shadow-[0_0_15px_#cb6ce6e6]
+    @apply text-[#F5F5F5] opacity-15 border border-[#F5F5F5] py-1 px-3.5 rounded-full font-spartan font-bold text-[15pt] cursor-pointer hover:opacity-100 hover:border-[#CB6CE6] hover:bg-[#CB6CE6] hover:shadow-[0_0_15px_#cb6ce6e6]
 }
 
 .input_selecionar_numero:checked + .label_selecionar_numero {
     @apply opacity-100 border-[#CB6CE6] bg-[#CB6CE6] shadow-[0_0_15px_#cb6ce6e6]
+}
+
+.card_ranking {
+    @apply border border-[#8080802a] rounded-2xl flex flex-col w-60 h-60 justify-around py-2 px-4 relative overflow-hidden
+}
+
+.posicao_ranking {
+    @apply font-spartan text-[#F5F5F5] text-4xl font-semibold
+}
+
+.nome_participante_ranking {
+    @apply text-[#F5F5F5] font-spartan text-3xl font-semibold
+}
+
+.linha_horizontal_ranking {
+    @apply border-[#F5F5F5] w-2/4 opacity-20 
+}
+
+.info_ranking_participante {
+    @apply text-[#F5F5F5] font-spartan font-light text-[17px]
+}
+
+.efeito_luz_ranking {
+    @apply absolute -bottom-48
 }
