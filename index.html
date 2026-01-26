@@ -1,32 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-AO">
+<html lang="pt-AO" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/output.css">
-    <title>50BUÉ. | A chance de Transformar a Sua Vida com 50KZs</title>
+    <script src="assets/script/script.js" defer></script>
+    <title>50BUÉ. | Transforme a sua vida com 50KZs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="bg-[#0d0d0d] overflow-x-hidden">
-    <nav class="h-screen bg-[url('../../assets/img/bg.webp')] bg-cover bg-center">
-        <header class="flex text-[#f5f5f5] justify-between items-center px-9 h-14 fixed w-full z-50 backdrop-blur-sm">
 
-            <a href="./">
+    <nav class="h-screen bg-[url('../../assets/img/bg.webp')] bg-cover bg-center">
+        <header class="flex text-[#F5F5F5] justify-between items-center pl-5 pr-2 h-14 fixed w-full z-50 backdrop-blur-sm">
+
+            <a href="./" class="z-10">
                 <h1 class="uppercase font-bebas text-3xl"><span class="colorido">50</span>bué<span class="colorido">.</span></h1>
             </a>
 
-            <nav class="absolute flex-col h-screen w-screen top-0 left-0 justify-between pt-16 pb-6 items-center translate-x-full hidden inset-0">
-                <a href="#" class="opcao_menu">Página Inicial</a>
-                <a href="#" class="opcao_menu">Como Funciona?</a>
-                <a href="#" class="opcao_menu">Prémios</a>
-                <a href="#" class="opcao_menu">Vencedores</a>
-                <a href="#" class="opcao_menu">Sobre o 50BUÉ.</a>
-                <a href="#" class="opcao_menu">Fundo</a>
+            <nav class="menu_mobile">
+                <a href="#" target="_top" class="opcao_menu">Página Inicial</a>
+                <a href="#parceiros" class="opcao_menu">Nossos Parceiros?</a>
+                <a href="#premios" class="opcao_menu">Prémios</a>
+                <a href="#video_vencedores" class="opcao_menu">Vencedores</a>
+                <a href="#sobre_nos" class="opcao_menu">Sobre o 50BUÉ.</a>
+                <a href="#perguntas_frequentes" class="opcao_menu">Perguntas Frequentes</a>
             </nav>
 
-            <nav class="flex items-center gap-4">
-                <a href="#" class="border animate-bounce p-1 rounded-r-2xl border-[#80808078]"><button class="botao botao_primario">Ganhar - Fácil e Rápido</button></a>
+            <nav class="flex items-center gap-4 z-10">
+                <a href="#" class="border animate-bounce p-1 rounded-r-2xl border-[#80808078]">
+                    <button class="botao botao_primario">Ganhar - Fácil e Rápido</button>
+                </a>
 
-                <button aria-label="Abrir menu hambúrguer" aria-expanded="false" class="flex flex-col gap-1 items-end cursor-pointer">
+                <button aria-label="Abrir menu hambúrguer" aria-expanded="false" class="flex flex-col gap-1 items-end cursor-pointer menu_hamburguer p-3">
                     <span class="linha_menu_hamburguer"></span>
                     <span class="linha_menu_hamburguer"></span>
                 </button>
@@ -37,25 +41,25 @@
         <div class=" bg-[#0d0d0dad] h-screen flex flex-col items-center justify-center px-9">
             <h1 class="text-center text-transparent font-bold font-spartan text-5xl bg-clip-text bg-[linear-gradient(90deg,#F5F5F5_0%,#B0B0B0_50%,#A0A0A0_100%)]">A chance de transformar a tua vida com apenas 50KZs.</h1>
             <p class="text-center text-[#F5F5F5] font-roboto my-2 text-[16px]">Ganhe prémios incríveis e transforme sua vida por um preço que custa 7 vezes menos que um saldo.</p>
-            <nav class="flex gap-1 w-max border border-[#80808078] p-1.5 rounded-full">
+            <nav class="flex gap-1 w-max border border-[#80808078] p-1.5 rounded-full shadow-[0_0_15px_#000]">
                 <a href="#"><button class="botao botao_secundario">Assistir Vídeo</button></a>
-                <a href="#"><button class="botao botao_primario">Quero Ganhar Agora</button></a>
+                <a href="#"><button class="botao botao_primario">Nossos Campeões</button></a>
             </nav>
         </div>
     </nav>
 
     <main>
-        <section class="secao">
+        <section class="secao" id="ativar_numero">
             <div>
-                <h2 class="titulo_secao">Ative os seus números da transformação.</h2>
-                <p class="texto_secao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto est dolore iusto officia, tempore ut accusamus! Assumenda nihil illo quod vero.</p>
+                <h2 class="titulo_secao">Ative os seus <span class="colorido">números</span> da <span class="colorido">transformação</span>.</h2>
+                <p class="texto_secao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto est dolore iusto officia, tempore ut accusamus!</p>
             </div>
             <nav>
-                <form action="#" class="border border-[#8080802a] p-3 rounded-2xl relative overflow-hidden">
+                <form action="#" class="border border-[#8080802a] p-3 rounded-2xl relative overflow-hidden shadow-[0_0_15px_#000]">
                     <div class="efeito_luz absolute -top-45 -right-15"></div>
 
                     <div>
-                        <nav class="border border-[#80808078] flex justify-between gap-2 p-1 rounded-full flex-wrap items-center">
+                        <nav class="border border-[#80808078] flex justify-center gap-2 p-1 rounded-full flex-wrap items-center">
                             <button class="botao botao_ativar_numero ativo">Selecione</button>
                             <button class="botao botao_ativar_numero">Gere</button>
                             <button class="botao botao_ativar_numero">Pesquise</button>
@@ -63,307 +67,336 @@
                         </nav>
                         
                         <nav class="flex flex-col">
-                            <p class="text-[#F5F5F5] font-spartan my-2 text-center">É o momento certo para selecionar os teus números da transformação!</p>
-
-                            <nav class="flex gap-2 pb-4 justify-center flex-wrap">
-
-                                <input type="checkbox" name="numero_0" id="numero_0" class="input_selecionar_numero">
-                                <label for="numero_0" class="label_selecionar_numero">0</label>
-
-                                <input type="checkbox" name="numero_1" id="numero_1" class="input_selecionar_numero">
-                                <label for="numero_1" class="label_selecionar_numero">1</label>
-
-                                <input type="checkbox" name="numero_2" id="numero_2" class="input_selecionar_numero">
-                                <label for="numero_2" class="label_selecionar_numero">2</label>
-
-                                <input type="checkbox" name="numero_3" id="numero_3" class="input_selecionar_numero">
-                                <label for="numero_3" class="label_selecionar_numero">3</label>
-
-                                <input type="checkbox" name="numero_4" id="numero_4" class="input_selecionar_numero">
-                                <label for="numero_4" class="label_selecionar_numero">4</label>
-
-                                <input type="checkbox" name="numero_5" id="numero_5" class="input_selecionar_numero">
-                                <label for="numero_5" class="label_selecionar_numero">5</label>
-
-                                <input type="checkbox" name="numero_6" id="numero_6" class="input_selecionar_numero">
-                                <label for="numero_6" class="label_selecionar_numero">6</label>
-
-                                <input type="checkbox" name="numero_7" id="numero_7" class="input_selecionar_numero">
-                                <label for="numero_7" class="label_selecionar_numero">7</label>
-
-                                <input type="checkbox" name="numero_8" id="numero_8" class="input_selecionar_numero">
-                                <label for="numero_8" class="label_selecionar_numero">8</label>
-
-                                <input type="checkbox" name="numero_9" id="numero_9" class="input_selecionar_numero">
-                                <label for="numero_9" class="label_selecionar_numero">9</label>
-
-                                <input type="checkbox" name="numero_10" id="numero_10" class="input_selecionar_numero">
-                                <label for="numero_10" class="label_selecionar_numero">10</label>
-
-                                <input type="checkbox" name="numero_11" id="numero_11" class="input_selecionar_numero">
-                                <label for="numero_11" class="label_selecionar_numero">11</label>
-
-                                <input type="checkbox" name="numero_12" id="numero_12" class="input_selecionar_numero">
-                                <label for="numero_12" class="label_selecionar_numero">12</label>
-
-                                <input type="checkbox" name="numero_13" id="numero_13" class="input_selecionar_numero">
-                                <label for="numero_13" class="label_selecionar_numero">13</label>
-
-                                <input type="checkbox" name="numero_14" id="numero_14" class="input_selecionar_numero">
-                                <label for="numero_14" class="label_selecionar_numero">14</label>
-
-                                <input type="checkbox" name="numero_15" id="numero_15" class="input_selecionar_numero">
-                                <label for="numero_15" class="label_selecionar_numero">15</label>
-
-                                <input type="checkbox" name="numero_16" id="numero_16" class="input_selecionar_numero">
-                                <label for="numero_16" class="label_selecionar_numero">16</label>
-
-                                <input type="checkbox" name="numero_17" id="numero_17" class="input_selecionar_numero">
-                                <label for="numero_17" class="label_selecionar_numero">17</label>
-
-                                <input type="checkbox" name="numero_18" id="numero_18" class="input_selecionar_numero">
-                                <label for="numero_18" class="label_selecionar_numero">18</label>
-
-                                <input type="checkbox" name="numero_19" id="numero_19" class="input_selecionar_numero">
-                                <label for="numero_19" class="label_selecionar_numero">19</label>
-
-                                <input type="checkbox" name="numero_20" id="numero_20" class="input_selecionar_numero">
-                                <label for="numero_20" class="label_selecionar_numero">20</label>
-
-                                <input type="checkbox" name="numero_21" id="numero_21" class="input_selecionar_numero">
-                                <label for="numero_21" class="label_selecionar_numero">21</label>
-
-                                <input type="checkbox" name="numero_22" id="numero_22" class="input_selecionar_numero">
-                                <label for="numero_23" class="label_selecionar_numero">23</label>
-
-                                <input type="checkbox" name="numero_24" id="numero_24" class="input_selecionar_numero">
-                                <label for="numero_24" class="label_selecionar_numero">24</label>
-
-                                <input type="checkbox" name="numero_25" id="numero_25" class="input_selecionar_numero">
-                                <label for="numero_25" class="label_selecionar_numero">25</label>
-
-                                <input type="checkbox" name="numero_26" id="numero_26" class="input_selecionar_numero">
-                                <label for="numero_27" class="label_selecionar_numero">27</label>
-
-                                <input type="checkbox" name="numero_28" id="numero_28" class="input_selecionar_numero">
-                                <label for="numero_28" class="label_selecionar_numero">28</label>
-
-                                <input type="checkbox" name="numero_29" id="numero_29" class="input_selecionar_numero">
-                                <label for="numero_29" class="label_selecionar_numero">29</label>
-
-                                <input type="checkbox" name="numero_30" id="numero_30" class="input_selecionar_numero">
-                                <label for="numero_30" class="label_selecionar_numero">30</label>
-
-                                <input type="checkbox" name="numero_31" id="numero_31" class="input_selecionar_numero">
-                                <label for="numero_31" class="label_selecionar_numero">31</label>
-
-                                <input type="checkbox" name="numero_32" id="numero_32" class="input_selecionar_numero">
-                                <label for="numero_32" class="label_selecionar_numero">32</label>
-
-                                <input type="checkbox" name="numero_33" id="numero_33" class="input_selecionar_numero">
-                                <label for="numero_33" class="label_selecionar_numero">33</label>
-
-                                <input type="checkbox" name="numero_34" id="numero_34" class="input_selecionar_numero">
-                                <label for="numero_34" class="label_selecionar_numero">34</label>
-
-                                <input type="checkbox" name="numero_35" id="numero_35" class="input_selecionar_numero">
-                                <label for="numero_35" class="label_selecionar_numero">35</label>
-
-                                <input type="checkbox" name="numero_36" id="numero_36" class="input_selecionar_numero">
-                                <label for="numero_36" class="label_selecionar_numero">36</label>
-
-                                <input type="checkbox" name="numero_37" id="numero_37" class="input_selecionar_numero">
-                                <label for="numero_37" class="label_selecionar_numero">37</label>
-
-                                <input type="checkbox" name="numero_38" id="numero_38" class="input_selecionar_numero">
-                                <label for="numero_38" class="label_selecionar_numero">38</label>
-
-                                <input type="checkbox" name="numero_39" id="numero_39" class="input_selecionar_numero">
-                                <label for="numero_39" class="label_selecionar_numero">39</label>
-
-                                <input type="checkbox" name="numero_40" id="numero_40" class="input_selecionar_numero">
-                                <label for="numero_40" class="label_selecionar_numero">40</label>
-
-                                <input type="checkbox" name="numero_41" id="numero_41" class="input_selecionar_numero">
-                                <label for="numero_41" class="label_selecionar_numero">41</label>
-
-                                <input type="checkbox" name="numero_42" id="numero_42" class="input_selecionar_numero">
-                                <label for="numero_42" class="label_selecionar_numero">42</label>
-
-                                <input type="checkbox" name="numero_43" id="numero_43" class="input_selecionar_numero">
-                                <label for="numero_43" class="label_selecionar_numero">43</label>
-
-                                <input type="checkbox" name="numero_44" id="numero_44" class="input_selecionar_numero">
-                                <label for="numero_44" class="label_selecionar_numero">44</label>
-
-                                <input type="checkbox" name="numero_45" id="numero_45" class="input_selecionar_numero">
-                                <label for="numero_46" class="label_selecionar_numero">45</label>
-
-                                <input type="checkbox" name="numero_46" id="numero_46" class="input_selecionar_numero">
-                                <label for="numero_46" class="label_selecionar_numero">46</label>
-
-                                <input type="checkbox" name="numero_47" id="numero_47" class="input_selecionar_numero">
-                                <label for="numero_47" class="label_selecionar_numero">47</label>
-
-                                <input type="checkbox" name="numero_48" id="numero_48" class="input_selecionar_numero">
-                                <label for="numero_48" class="label_selecionar_numero">48</label>
-
-                                <input type="checkbox" name="numero_49" id="numero_49" class="input_selecionar_numero">
-                                <label for="numero_49" class="label_selecionar_numero">49</label>
-
-                                <input type="checkbox" name="numero_50" id="numero_50" class="input_selecionar_numero">
-                                <label for="numero_50" class="label_selecionar_numero">50</label>
-
-                                <input type="checkbox" name="numero_51" id="numero_51" class="input_selecionar_numero">
-                                <label for="numero_51" class="label_selecionar_numero">51</label>
-
-                                <input type="checkbox" name="numero_52" id="numero_52" class="input_selecionar_numero">
-                                <label for="numero_52" class="label_selecionar_numero">52</label>
-
-                                <input type="checkbox" name="numero_53" id="numero_53" class="input_selecionar_numero">
-                                <label for="numero_53" class="label_selecionar_numero">53</label>
-
-                                <input type="checkbox" name="numero_54" id="numero_54" class="input_selecionar_numero">
-                                <label for="numero_54" class="label_selecionar_numero">54</label>
-
-                                <input type="checkbox" name="numero_55" id="numero_55" class="input_selecionar_numero">
-                                <label for="numero_55" class="label_selecionar_numero">55</label>
-
-                                <input type="checkbox" name="numero_56" id="numero_56" class="input_selecionar_numero">
-                                <label for="numero_56" class="label_selecionar_numero">56</label>
-
-                                <input type="checkbox" name="numero_57" id="numero_57" class="input_selecionar_numero">
-                                <label for="numero_57" class="label_selecionar_numero">57</label>
-
-                                <input type="checkbox" name="numero_58" id="numero_58" class="input_selecionar_numero">
-                                <label for="numero_58" class="label_selecionar_numero">58</label>
-
-                                <input type="checkbox" name="numero_59" id="numero_59" class="input_selecionar_numero">
-                                <label for="numero_59" class="label_selecionar_numero">59</label>
-
-                                <input type="checkbox" name="numero_60" id="numero_60" class="input_selecionar_numero">
-                                <label for="numero_60" class="label_selecionar_numero">60</label>
-
-                                <input type="checkbox" name="numero_61" id="numero_61" class="input_selecionar_numero">
-                                <label for="numero_61" class="label_selecionar_numero">61</label>
-
-                                <input type="checkbox" name="numero_62" id="numero_62" class="input_selecionar_numero">
-                                <label for="numero_62" class="label_selecionar_numero">62</label>
-
-                                <input type="checkbox" name="numero_63" id="numero_63" class="input_selecionar_numero">
-                                <label for="numero_63" class="label_selecionar_numero">63</label>
-
-                                <input type="checkbox" name="numero_64" id="numero_64" class="input_selecionar_numero">
-                                <label for="numero_64" class="label_selecionar_numero">64</label>
-
-                                <input type="checkbox" name="numero_65" id="numero_65" class="input_selecionar_numero">
-                                <label for="numero_65" class="label_selecionar_numero">65</label>
-
-                                <input type="checkbox" name="numero_66" id="numero_66" class="input_selecionar_numero">
-                                <label for="numero_66" class="label_selecionar_numero">66</label>
-
-                                <input type="checkbox" name="numero_67" id="numero_67" class="input_selecionar_numero">
-                                <label for="numero_67" class="label_selecionar_numero">67</label>
-
-                                <input type="checkbox" name="numero_68" id="numero_68" class="input_selecionar_numero">
-                                <label for="numero_68" class="label_selecionar_numero">68</label>
-
-                                <input type="checkbox" name="numero_69" id="numero_69" class="input_selecionar_numero">
-                                <label for="numero_69" class="label_selecionar_numero">69</label>
-
-                                <input type="checkbox" name="numero_70" id="numero_70" class="input_selecionar_numero">
-                                <label for="numero_70" class="label_selecionar_numero">70</label>
-
-                                <input type="checkbox" name="numero_71" id="numero_71" class="input_selecionar_numero">
-                                <label for="numero_71" class="label_selecionar_numero">71</label>
-
-                                <input type="checkbox" name="numero_72" id="numero_72" class="input_selecionar_numero">
-                                <label for="numero_72" class="label_selecionar_numero">72</label>
-
-                                <input type="checkbox" name="numero_73" id="numero_73" class="input_selecionar_numero">
-                                <label for="numero_73" class="label_selecionar_numero">73</label>
-
-                                <input type="checkbox" name="numero_74" id="numero_74" class="input_selecionar_numero">
-                                <label for="numero_74" class="label_selecionar_numero">74</label>
-
-                                <input type="checkbox" name="numero_75" id="numero_75" class="input_selecionar_numero">
-                                <label for="numero_75" class="label_selecionar_numero">75</label>
-
-                                <input type="checkbox" name="numero_76" id="numero_76" class="input_selecionar_numero">
-                                <label for="numero_76" class="label_selecionar_numero">76</label>
-
-                                <input type="checkbox" name="numero_77" id="numero_77" class="input_selecionar_numero">
-                                <label for="numero_77" class="label_selecionar_numero">77</label>
-
-                                <input type="checkbox" name="numero_78" id="numero_78" class="input_selecionar_numero">
-                                <label for="numero_78" class="label_selecionar_numero">78</label>
-
-                                <input type="checkbox" name="numero_79" id="numero_79" class="input_selecionar_numero">
-                                <label for="numero_79" class="label_selecionar_numero">79</label>
-
-                                <input type="checkbox" name="numero_80" id="numero_80" class="input_selecionar_numero">
-                                <label for="numero_80" class="label_selecionar_numero">80</label>
-
-                                <input type="checkbox" name="numero_81" id="numero_81" class="input_selecionar_numero">
-                                <label for="numero_81" class="label_selecionar_numero">81</label>
-
-                                <input type="checkbox" name="numero_82" id="numero_82" class="input_selecionar_numero">
-                                <label for="numero_82" class="label_selecionar_numero">82</label>
-
-                                <input type="checkbox" name="numero_83" id="numero_83" class="input_selecionar_numero">
-                                <label for="numero_83" class="label_selecionar_numero">83</label>
-
-                                <input type="checkbox" name="numero_84" id="numero_84" class="input_selecionar_numero">
-                                <label for="numero_84" class="label_selecionar_numero">84</label>
-
-                                <input type="checkbox" name="numero_85" id="numero_85" class="input_selecionar_numero">
-                                <label for="numero_85" class="label_selecionar_numero">85</label>
-
-                                <input type="checkbox" name="numero_86" id="numero_86" class="input_selecionar_numero">
-                                <label for="numero_86" class="label_selecionar_numero">86</label>
-
-                                <input type="checkbox" name="numero_87" id="numero_87" class="input_selecionar_numero">
-                                <label for="numero_87" class="label_selecionar_numero">87</label>
-
-                                <input type="checkbox" name="numero_88" id="numero_88" class="input_selecionar_numero">
-                                <label for="numero_88" class="label_selecionar_numero">88</label>
-
-                                <input type="checkbox" name="numero_89" id="numero_89" class="input_selecionar_numero">
-                                <label for="numero_89" class="label_selecionar_numero">89</label>
-
-                                <input type="checkbox" name="numero_90" id="numero_90" class="input_selecionar_numero">
-                                <label for="numero_90" class="label_selecionar_numero">90</label>
-
-                                <input type="checkbox" name="numero_91" id="numero_91" class="input_selecionar_numero">
-                                <label for="numero_91" class="label_selecionar_numero">91</label>
-
-                                <input type="checkbox" name="numero_92" id="numero_92" class="input_selecionar_numero">
-                                <label for="numero_92" class="label_selecionar_numero">92</label>
-
-                                <input type="checkbox" name="numero_93" id="numero_93" class="input_selecionar_numero">
-                                <label for="numero_93" class="label_selecionar_numero">93</label>
-
-                                <input type="checkbox" name="numero_94" id="numero_94" class="input_selecionar_numero">
-                                <label for="numero_94" class="label_selecionar_numero">94</label>
-
-                                <input type="checkbox" name="numero_95" id="numero_95" class="input_selecionar_numero">
-                                <label for="numero_95" class="label_selecionar_numero">95</label>
-
-                                <input type="checkbox" name="numero_96" id="numero_96" class="input_selecionar_numero">
-                                <label for="numero_96" class="label_selecionar_numero">96</label>
-
-                                <input type="checkbox" name="numero_97" id="numero_97" class="input_selecionar_numero">
-                                <label for="numero_97" class="label_selecionar_numero">97</label>
-
-                                <input type="checkbox" name="numero_98" id="numero_98" class="input_selecionar_numero">
-                                <label for="numero_98" class="label_selecionar_numero">98</label>
-
-                                <input type="checkbox" name="numero_99" id="numero_99" class="input_selecionar_numero">
-                                <label for="numero_99" class="label_selecionar_numero">99</label>
-
-                                <input type="checkbox" name="numero_100" id="numero_100" class="input_selecionar_numero">
-                                <label for="numero_100" class="label_selecionar_numero">100</label>
-
+                            <nav class="hidden">
+                                <p class="texto_tipo_ativacao">Selecione agora os seus números da transformação.</p>
+                                <nav class="flex gap-2 pb-4 justify-center flex-wrap">
+                                    
+                                    <input type="checkbox" name="numero_0" id="numero_0" class="input_selecionar_numero">
+                                    <label for="numero_0" class="label_selecionar_numero">0</label>
+                                    
+                                    <input type="checkbox" name="numero_1" id="numero_1" class="input_selecionar_numero">
+                                    <label for="numero_1" class="label_selecionar_numero">1</label>
+                                    
+                                    <input type="checkbox" name="numero_2" id="numero_2" class="input_selecionar_numero">
+                                    <label for="numero_2" class="label_selecionar_numero">2</label>
+                                    
+                                    <input type="checkbox" name="numero_3" id="numero_3" class="input_selecionar_numero">
+                                    <label for="numero_3" class="label_selecionar_numero">3</label>
+                                    
+                                    <input type="checkbox" name="numero_4" id="numero_4" class="input_selecionar_numero">
+                                    <label for="numero_4" class="label_selecionar_numero">4</label>
+                                    
+                                    <input type="checkbox" name="numero_5" id="numero_5" class="input_selecionar_numero">
+                                    <label for="numero_5" class="label_selecionar_numero">5</label>
+                                    
+                                    <input type="checkbox" name="numero_6" id="numero_6" class="input_selecionar_numero">
+                                    <label for="numero_6" class="label_selecionar_numero">6</label>
+                                    
+                                    <input type="checkbox" name="numero_7" id="numero_7" class="input_selecionar_numero">
+                                    <label for="numero_7" class="label_selecionar_numero">7</label>
+                                    
+                                    <input type="checkbox" name="numero_8" id="numero_8" class="input_selecionar_numero">
+                                    <label for="numero_8" class="label_selecionar_numero">8</label>
+                                    
+                                    <input type="checkbox" name="numero_9" id="numero_9" class="input_selecionar_numero">
+                                    <label for="numero_9" class="label_selecionar_numero">9</label>
+                                    
+                                    <input type="checkbox" name="numero_10" id="numero_10" class="input_selecionar_numero">
+                                    <label for="numero_10" class="label_selecionar_numero">10</label>
+                                    
+                                    <input type="checkbox" name="numero_11" id="numero_11" class="input_selecionar_numero">
+                                    <label for="numero_11" class="label_selecionar_numero">11</label>
+                                    
+                                    <input type="checkbox" name="numero_12" id="numero_12" class="input_selecionar_numero">
+                                    <label for="numero_12" class="label_selecionar_numero">12</label>
+                                    
+                                    <input type="checkbox" name="numero_13" id="numero_13" class="input_selecionar_numero">
+                                    <label for="numero_13" class="label_selecionar_numero">13</label>
+                                    
+                                    <input type="checkbox" name="numero_14" id="numero_14" class="input_selecionar_numero">
+                                    <label for="numero_14" class="label_selecionar_numero">14</label>
+                                    
+                                    <input type="checkbox" name="numero_15" id="numero_15" class="input_selecionar_numero">
+                                    <label for="numero_15" class="label_selecionar_numero">15</label>
+                                    
+                                    <input type="checkbox" name="numero_16" id="numero_16" class="input_selecionar_numero">
+                                    <label for="numero_16" class="label_selecionar_numero">16</label>
+                                    
+                                    <input type="checkbox" name="numero_17" id="numero_17" class="input_selecionar_numero">
+                                    <label for="numero_17" class="label_selecionar_numero">17</label>
+                                    
+                                    <input type="checkbox" name="numero_18" id="numero_18" class="input_selecionar_numero">
+                                    <label for="numero_18" class="label_selecionar_numero">18</label>
+                                    
+                                    <input type="checkbox" name="numero_19" id="numero_19" class="input_selecionar_numero">
+                                    <label for="numero_19" class="label_selecionar_numero">19</label>
+                                    
+                                    <input type="checkbox" name="numero_20" id="numero_20" class="input_selecionar_numero">
+                                    <label for="numero_20" class="label_selecionar_numero">20</label>
+                                    
+                                    <input type="checkbox" name="numero_21" id="numero_21" class="input_selecionar_numero">
+                                    <label for="numero_21" class="label_selecionar_numero">21</label>
+                                    
+                                    <input type="checkbox" name="numero_22" id="numero_22" class="input_selecionar_numero">
+                                    <label for="numero_23" class="label_selecionar_numero">23</label>
+                                    
+                                    <input type="checkbox" name="numero_24" id="numero_24" class="input_selecionar_numero">
+                                    <label for="numero_24" class="label_selecionar_numero">24</label>
+                                    
+                                    <input type="checkbox" name="numero_25" id="numero_25" class="input_selecionar_numero">
+                                    <label for="numero_25" class="label_selecionar_numero">25</label>
+                                    
+                                    <input type="checkbox" name="numero_26" id="numero_26" class="input_selecionar_numero">
+                                    <label for="numero_27" class="label_selecionar_numero">27</label>
+                                    
+                                    <input type="checkbox" name="numero_28" id="numero_28" class="input_selecionar_numero">
+                                    <label for="numero_28" class="label_selecionar_numero">28</label>
+                                    
+                                    <input type="checkbox" name="numero_29" id="numero_29" class="input_selecionar_numero">
+                                    <label for="numero_29" class="label_selecionar_numero">29</label>
+                                    
+                                    <input type="checkbox" name="numero_30" id="numero_30" class="input_selecionar_numero">
+                                    <label for="numero_30" class="label_selecionar_numero">30</label>
+                                    
+                                    <input type="checkbox" name="numero_31" id="numero_31" class="input_selecionar_numero">
+                                    <label for="numero_31" class="label_selecionar_numero">31</label>
+                                    
+                                    <input type="checkbox" name="numero_32" id="numero_32" class="input_selecionar_numero">
+                                    <label for="numero_32" class="label_selecionar_numero">32</label>
+                                    
+                                    <input type="checkbox" name="numero_33" id="numero_33" class="input_selecionar_numero">
+                                    <label for="numero_33" class="label_selecionar_numero">33</label>
+                                    
+                                    <input type="checkbox" name="numero_34" id="numero_34" class="input_selecionar_numero">
+                                    <label for="numero_34" class="label_selecionar_numero">34</label>
+                                    
+                                    <input type="checkbox" name="numero_35" id="numero_35" class="input_selecionar_numero">
+                                    <label for="numero_35" class="label_selecionar_numero">35</label>
+                                    
+                                    <input type="checkbox" name="numero_36" id="numero_36" class="input_selecionar_numero">
+                                    <label for="numero_36" class="label_selecionar_numero">36</label>
+                                    
+                                    <input type="checkbox" name="numero_37" id="numero_37" class="input_selecionar_numero">
+                                    <label for="numero_37" class="label_selecionar_numero">37</label>
+                                    
+                                    <input type="checkbox" name="numero_38" id="numero_38" class="input_selecionar_numero">
+                                    <label for="numero_38" class="label_selecionar_numero">38</label>
+                                    
+                                    <input type="checkbox" name="numero_39" id="numero_39" class="input_selecionar_numero">
+                                    <label for="numero_39" class="label_selecionar_numero">39</label>
+                                    
+                                    <input type="checkbox" name="numero_40" id="numero_40" class="input_selecionar_numero">
+                                    <label for="numero_40" class="label_selecionar_numero">40</label>
+                                    
+                                    <input type="checkbox" name="numero_41" id="numero_41" class="input_selecionar_numero">
+                                    <label for="numero_41" class="label_selecionar_numero">41</label>
+                                    
+                                    <input type="checkbox" name="numero_42" id="numero_42" class="input_selecionar_numero">
+                                    <label for="numero_42" class="label_selecionar_numero">42</label>
+                                    
+                                    <input type="checkbox" name="numero_43" id="numero_43" class="input_selecionar_numero">
+                                    <label for="numero_43" class="label_selecionar_numero">43</label>
+                                    
+                                    <input type="checkbox" name="numero_44" id="numero_44" class="input_selecionar_numero">
+                                    <label for="numero_44" class="label_selecionar_numero">44</label>
+                                    
+                                    <input type="checkbox" name="numero_45" id="numero_45" class="input_selecionar_numero">
+                                    <label for="numero_46" class="label_selecionar_numero">45</label>
+                                    
+                                    <input type="checkbox" name="numero_46" id="numero_46" class="input_selecionar_numero">
+                                    <label for="numero_46" class="label_selecionar_numero">46</label>
+                                    
+                                    <input type="checkbox" name="numero_47" id="numero_47" class="input_selecionar_numero">
+                                    <label for="numero_47" class="label_selecionar_numero">47</label>
+                                    
+                                    <input type="checkbox" name="numero_48" id="numero_48" class="input_selecionar_numero">
+                                    <label for="numero_48" class="label_selecionar_numero">48</label>
+                                    
+                                    <input type="checkbox" name="numero_49" id="numero_49" class="input_selecionar_numero">
+                                    <label for="numero_49" class="label_selecionar_numero">49</label>
+                                    
+                                    <input type="checkbox" name="numero_50" id="numero_50" class="input_selecionar_numero">
+                                    <label for="numero_50" class="label_selecionar_numero">50</label>
+                                    
+                                    <input type="checkbox" name="numero_51" id="numero_51" class="input_selecionar_numero">
+                                    <label for="numero_51" class="label_selecionar_numero">51</label>
+                                    
+                                    <input type="checkbox" name="numero_52" id="numero_52" class="input_selecionar_numero">
+                                    <label for="numero_52" class="label_selecionar_numero">52</label>
+                                    
+                                    <input type="checkbox" name="numero_53" id="numero_53" class="input_selecionar_numero">
+                                    <label for="numero_53" class="label_selecionar_numero">53</label>
+                                    
+                                    <input type="checkbox" name="numero_54" id="numero_54" class="input_selecionar_numero">
+                                    <label for="numero_54" class="label_selecionar_numero">54</label>
+                                    
+                                    <input type="checkbox" name="numero_55" id="numero_55" class="input_selecionar_numero">
+                                    <label for="numero_55" class="label_selecionar_numero">55</label>
+                                    
+                                    <input type="checkbox" name="numero_56" id="numero_56" class="input_selecionar_numero">
+                                    <label for="numero_56" class="label_selecionar_numero">56</label>
+                                    
+                                    <input type="checkbox" name="numero_57" id="numero_57" class="input_selecionar_numero">
+                                    <label for="numero_57" class="label_selecionar_numero">57</label>
+                                    
+                                    <input type="checkbox" name="numero_58" id="numero_58" class="input_selecionar_numero">
+                                    <label for="numero_58" class="label_selecionar_numero">58</label>
+                                    
+                                    <input type="checkbox" name="numero_59" id="numero_59" class="input_selecionar_numero">
+                                    <label for="numero_59" class="label_selecionar_numero">59</label>
+                                    
+                                    <input type="checkbox" name="numero_60" id="numero_60" class="input_selecionar_numero">
+                                    <label for="numero_60" class="label_selecionar_numero">60</label>
+                                    
+                                    <input type="checkbox" name="numero_61" id="numero_61" class="input_selecionar_numero">
+                                    <label for="numero_61" class="label_selecionar_numero">61</label>
+                                    
+                                    <input type="checkbox" name="numero_62" id="numero_62" class="input_selecionar_numero">
+                                    <label for="numero_62" class="label_selecionar_numero">62</label>
+                                    
+                                    <input type="checkbox" name="numero_63" id="numero_63" class="input_selecionar_numero">
+                                    <label for="numero_63" class="label_selecionar_numero">63</label>
+                                    
+                                    <input type="checkbox" name="numero_64" id="numero_64" class="input_selecionar_numero">
+                                    <label for="numero_64" class="label_selecionar_numero">64</label>
+                                    
+                                    <input type="checkbox" name="numero_65" id="numero_65" class="input_selecionar_numero">
+                                    <label for="numero_65" class="label_selecionar_numero">65</label>
+                                    
+                                    <input type="checkbox" name="numero_66" id="numero_66" class="input_selecionar_numero">
+                                    <label for="numero_66" class="label_selecionar_numero">66</label>
+                                    
+                                    <input type="checkbox" name="numero_67" id="numero_67" class="input_selecionar_numero">
+                                    <label for="numero_67" class="label_selecionar_numero">67</label>
+                                    
+                                    <input type="checkbox" name="numero_68" id="numero_68" class="input_selecionar_numero">
+                                    <label for="numero_68" class="label_selecionar_numero">68</label>
+                                    
+                                    <input type="checkbox" name="numero_69" id="numero_69" class="input_selecionar_numero">
+                                    <label for="numero_69" class="label_selecionar_numero">69</label>
+                                    
+                                    <input type="checkbox" name="numero_70" id="numero_70" class="input_selecionar_numero">
+                                    <label for="numero_70" class="label_selecionar_numero">70</label>
+                                    
+                                    <input type="checkbox" name="numero_71" id="numero_71" class="input_selecionar_numero">
+                                    <label for="numero_71" class="label_selecionar_numero">71</label>
+                                    
+                                    <input type="checkbox" name="numero_72" id="numero_72" class="input_selecionar_numero">
+                                    <label for="numero_72" class="label_selecionar_numero">72</label>
+                                    
+                                    <input type="checkbox" name="numero_73" id="numero_73" class="input_selecionar_numero">
+                                    <label for="numero_73" class="label_selecionar_numero">73</label>
+                                    
+                                    <input type="checkbox" name="numero_74" id="numero_74" class="input_selecionar_numero">
+                                    <label for="numero_74" class="label_selecionar_numero">74</label>
+                                    
+                                    <input type="checkbox" name="numero_75" id="numero_75" class="input_selecionar_numero">
+                                    <label for="numero_75" class="label_selecionar_numero">75</label>
+                                    
+                                    <input type="checkbox" name="numero_76" id="numero_76" class="input_selecionar_numero">
+                                    <label for="numero_76" class="label_selecionar_numero">76</label>
+                                    
+                                    <input type="checkbox" name="numero_77" id="numero_77" class="input_selecionar_numero">
+                                    <label for="numero_77" class="label_selecionar_numero">77</label>
+                                    
+                                    <input type="checkbox" name="numero_78" id="numero_78" class="input_selecionar_numero">
+                                    <label for="numero_78" class="label_selecionar_numero">78</label>
+                                    
+                                    <input type="checkbox" name="numero_79" id="numero_79" class="input_selecionar_numero">
+                                    <label for="numero_79" class="label_selecionar_numero">79</label>
+                                    
+                                    <input type="checkbox" name="numero_80" id="numero_80" class="input_selecionar_numero">
+                                    <label for="numero_80" class="label_selecionar_numero">80</label>
+                                    
+                                    <input type="checkbox" name="numero_81" id="numero_81" class="input_selecionar_numero">
+                                    <label for="numero_81" class="label_selecionar_numero">81</label>
+                                    
+                                    <input type="checkbox" name="numero_82" id="numero_82" class="input_selecionar_numero">
+                                    <label for="numero_82" class="label_selecionar_numero">82</label>
+                                    
+                                    <input type="checkbox" name="numero_83" id="numero_83" class="input_selecionar_numero">
+                                    <label for="numero_83" class="label_selecionar_numero">83</label>
+                                    
+                                    <input type="checkbox" name="numero_84" id="numero_84" class="input_selecionar_numero">
+                                    <label for="numero_84" class="label_selecionar_numero">84</label>
+                                    
+                                    <input type="checkbox" name="numero_85" id="numero_85" class="input_selecionar_numero">
+                                    <label for="numero_85" class="label_selecionar_numero">85</label>
+                                    
+                                    <input type="checkbox" name="numero_86" id="numero_86" class="input_selecionar_numero">
+                                    <label for="numero_86" class="label_selecionar_numero">86</label>
+                                    
+                                    <input type="checkbox" name="numero_87" id="numero_87" class="input_selecionar_numero">
+                                    <label for="numero_87" class="label_selecionar_numero">87</label>
+                                    
+                                    <input type="checkbox" name="numero_88" id="numero_88" class="input_selecionar_numero">
+                                    <label for="numero_88" class="label_selecionar_numero">88</label>
+                                    
+                                    <input type="checkbox" name="numero_89" id="numero_89" class="input_selecionar_numero">
+                                    <label for="numero_89" class="label_selecionar_numero">89</label>
+                                    
+                                    <input type="checkbox" name="numero_90" id="numero_90" class="input_selecionar_numero">
+                                    <label for="numero_90" class="label_selecionar_numero">90</label>
+                                    
+                                    <input type="checkbox" name="numero_91" id="numero_91" class="input_selecionar_numero">
+                                    <label for="numero_91" class="label_selecionar_numero">91</label>
+                                    
+                                    <input type="checkbox" name="numero_92" id="numero_92" class="input_selecionar_numero">
+                                    <label for="numero_92" class="label_selecionar_numero">92</label>
+                                    
+                                    <input type="checkbox" name="numero_93" id="numero_93" class="input_selecionar_numero">
+                                    <label for="numero_93" class="label_selecionar_numero">93</label>
+                                    
+                                    <input type="checkbox" name="numero_94" id="numero_94" class="input_selecionar_numero">
+                                    <label for="numero_94" class="label_selecionar_numero">94</label>
+                                    
+                                    <input type="checkbox" name="numero_95" id="numero_95" class="input_selecionar_numero">
+                                    <label for="numero_95" class="label_selecionar_numero">95</label>
+                                    
+                                    <input type="checkbox" name="numero_96" id="numero_96" class="input_selecionar_numero">
+                                    <label for="numero_96" class="label_selecionar_numero">96</label>
+                                    
+                                    <input type="checkbox" name="numero_97" id="numero_97" class="input_selecionar_numero">
+                                    <label for="numero_97" class="label_selecionar_numero">97</label>
+                                    
+                                    <input type="checkbox" name="numero_98" id="numero_98" class="input_selecionar_numero">
+                                    <label for="numero_98" class="label_selecionar_numero">98</label>
+                                    
+                                    <input type="checkbox" name="numero_99" id="numero_99" class="input_selecionar_numero">
+                                    <label for="numero_99" class="label_selecionar_numero">99</label>
+                                    
+                                    <input type="checkbox" name="numero_100" id="numero_100" class="input_selecionar_numero">
+                                    <label for="numero_100" class="label_selecionar_numero">100</label>
+                                </nav>
+                            </nav>
+
+                            <nav class="hidden">
+                                <p class="texto_tipo_ativacao">Gere os seus números da transformação.</p>
+                                <nav class="flex pb-4 flex-col items-center">
+                                    <nav>
+                                        <input type="checkbox" name="numero_gerado_13" id="numero_gerado_13" class="input_gerar_numero">
+                                        <label for="numero_gerado_13" class="label_gerar_numero">13</label>
+                                    </nav>
+                                    <nav class="flex gap-1 w-max border border-[#80808078] p-1.5 rounded-full shadow-[0_0_15px_#000]">
+                                        <a href="#"><button class="botao_extra">Tentar Outro</button></a>
+                                        <a href="#"><button class="botao botao_primario">Ativar Número</button></a>
+                                    </nav>
+                                </nav>
+                            </nav>
+
+                            <nav class="">
+                                <p class="texto_tipo_ativacao">Pesquise os seus números da transformação.</p>
+                                <nav class="flex pb-4 flex-col items-center gap-2">
+                                    <nav class="flex flex-col items-center">
+                                        <input type="search" name="numero_pesquisado" id="numero_pesquisado" class="border outline-0 border-[#8080801f] shadow-[0_0_5px_#000] h-44 text-[#F5F5F5] text-center font-spartan text-6xl w-full rounded-2xl hover:border-[#CB6CE6] focus:border-[#CB6CE6] not-placeholder-shown:border-[#CB6CE6] transition-all duration-500 ease-in" placeholder="Pesquise...">
+                                        <input type="checkbox" name="numero_pesquisado_13" id="numero_pesquisado_13" class="input_gerar_numero">
+                                        <label for="numero_pesquisado_13" class="label_gerar_numero">13</label>
+                                    </nav>
+                                    <nav class="flex gap-1 w-max border border-[#80808078] p-1.5 rounded-full shadow-[0_0_15px_#000]">
+                                        <a href="#"><button class="botao">Pesquisar</button></a>
+                                    </nav>
+                                    <span class="text-[#F5F5F5] font-spartan font-medium opacity-75">O número 50 não está disponível</span>
+                                </nav>
                             </nav>
 
                             <div class="flex justify-between items-center font-spartan text-[#F5F5F5] w-full">
@@ -382,12 +415,12 @@
             </nav>
         </section>
 
-        <section class="mt-11">
+        <section class="pt-16" id="ranking">
             <div class="secao">
-                <h2 class="titulo_secao">Os 4 melhores! Ative já para não perder a oportunidade.</h2>
+                <h2 class="titulo_secao">Os <span class="colorido">melhores</span>! Ative já para não <span class="colorido">perder a oportunidade</span>.</h2>
                 <p class="texto_secao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, non, itaque laium dignissimos architecto reprit ipsa et ullam sunt porro eveniet.</p>
             </div>
-            <div class="overflow-x-scroll px-9 pt-6 mt-2 relative">
+            <div class="div_content_ranking">
                 <div class="bg-[linear-gradient(35deg,#CB6CE6_0%,#0D0D0D_100%)] w-96 h-96 rounded-[75%_30%_30%_70%/60%_40%_60%_40%] hidden pointer-events-none"></div>
                 <div class="flex w-max h-64 gap-3.5">
                     <div class="card_ranking -rotate-3">
@@ -410,7 +443,7 @@
                         <h3 class="posicao_ranking">#3</h3>
                         <span class="nome_participante_ranking">Vânio</span>
                         <hr class="linha_horizontal_ranking">
-                        <p class="info_ranking_participante"><span class="colorido font-black">1 221</span> números ativados!  Não deixe o prémio incrível escapar das tuas mãos..</p>
+                        <p class="info_ranking_participante"><span class="colorido font-black">1 221</span> números ativados!  Não deixe o prémio incrível escapar das tuas mãos.</p>
                         <div class="efeito_luz efeito_luz_ranking"></div>
                     </div>
 
@@ -425,16 +458,15 @@
             </div>
         </section>
 
-        <section class="secao mt-11">
-            <div>
-                <h2 class="titulo_secao">Prémios do 50BUÉ.</h2>
+        <section class="overflow-x-hidden relative before:absolute before:bottom-0 before:z-10 before:bg-[linear-gradient(to_right,#0D0D0D_0%,#0D0D0D_20%,#0D0D0D_5%,transparent_100%)] before:h-140 before:w-15 before:left-0 before:pointer-events-none after:absolute after:bottom-0 after:bg-[linear-gradient(to_left,#0D0D0D_0%,#0D0D0D_20%,#0D0D0D_5%,transparent_100%)] after:z-10 after:h-140 after:w-10 after:right-0 after:pointer-events-none pt-16" id="premios">
+            <div class="px-9">
+                <h2 class="titulo_secao"><span class="colorido">Prémios</span> do 50BUÉ.</h2>
                 <p class="texto_secao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laboriosam et mollitia assumenda vel praesentium.</p>
             </div>
-            <nav>
+            <nav class="scroll-smooth snap-mandatory overflow-x-scroll content_card_premio">
                 <nav class="flex items-center">
-                    <button class="carousel_botao botao anterior" aria-label="Anterior">&#10094;</button>
+                    <nav class="flex w-max gap-4 mt-3 pl-9">
 
-                    <nav class="flex w-max gap-4 mt-3">
                         <div class="card_premio">
                             <h4 class="texto_premio_card_premio">prémio</h4>
                             <h3 class="nome_premio_card_premio">1.5 milhão de kwanzas</h3>
@@ -490,16 +522,15 @@
                             <img src="assets/img/test.png" alt="imagem do prémio 1.5 milhão de kwanzas" class="imagem_premio">
                             <p class="breves_premios">participe e descubra o prémio</p>
                         </div>
+                        
                     </nav>
-
-                    <button class="carousel_botao botao proximo" aria-label="Próximo">&#10095;</button>
                 </nav>
             </nav>
         </section>
 
-        <section class="secao mt-11">
+        <section class="secao overflow-x-hidden" id="video_vencedores">
             <div>
-                <h2 class="titulo_secao">Seja o próximo a transformar sua vida com o 50BUÉ.</h2>
+                <h2 class="titulo_secao">Seja o <span class="colorido">próximo a transformar sua vida</span> com o 50BUÉ.</h2>
                 <p class="texto_secao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laboriosam et mollitia assumenda vel praesentium.</p>
             </div>
             <div class="relative h-125 border border-[#8080802a] rounded-2xl flex items-center justify-center mt-4 p-3.5">
@@ -510,13 +541,13 @@
             </div>
         </section>
 
-        <section class="secao mt-11">
+        <section class="secao" id="sobre_nos">
             <div>
-                <h2 class="titulo_secao">Saiba tudo sobre o 50BUÉ.</h2>
+                <h2 class="titulo_secao"><span class="colorido">Saiba mais</span> sobre o 50BUÉ.</h2>
                 <p class="texto_secao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laboriosam et mollitia assumenda vel praesentium.</p>
             </div>
-            <div class="flex flex-col items-center justify-center gap-2">
-                
+            <div class="flex flex-col items-center justify-center gap-2 mt-5">
+
                 <div class="card_fundadores">
                     <img src="assets/img/amelia.webp" alt="imagem da amélia ceo e fundadora" class="img_fundador">
                     <h5 class="nome_fundador">Amélia</h5>
@@ -554,6 +585,113 @@
 
             </div>
         </section>
+
+        <section class="secao" id="perguntas_frequentes">
+            <div>
+                <h2 class="titulo_secao">Algumas <span class="colorido">perguntas</span> frequentes.</h2>
+                <p class="texto_secao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur laboriosam et mollitia assumenda vel praesentium.</p>
+            </div>
+            <div class="relative h-125 border border-[#8080802a] rounded-2xl flex items-center justify-center mt-4 p-3.5">
+                <div class="video">
+                    <h6 class="texto_brevemente">vídeo explicativo estará aqui</h6>
+                </div>
+            </div>
+        </section>
+        
+        <section class="secao bg-[linear-gradient(to_bottom,#0D0D0D_0%,#CC6CE61A_100%)]">
+            <div>
+                <h2 class="titulo_secao">Participe e <span class="colorido">melhore a vida</span> de centenas <span class="colorido">de angolanos</span>.</h2>
+                <p class="texto_secao">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="mt-5">
+                <div class="div_percentual_info">
+                    <p class="percentual percentual_maior">45%</p>
+                    <span class="info_percentual">Lorem, ipsum dolor sit amet consectetu. Architecto quas.</span>
+                </div>
+                <div class="div_percentual_info">
+                    <p class="percentual">28%</p>
+                    <span class="info_percentual">Lorem, ipsum dolor sit amet consectetu. Architecto quas.</span>
+                </div>
+                <div class="div_percentual_info">
+                    <p class="percentual">15%</p>
+                    <span class="info_percentual">Lorem, ipsum dolor sit amet consectetu. Architecto quas.</span>
+                </div>
+                <div class="div_percentual_info">
+                    <p class="percentual">7%</p>
+                    <span class="info_percentual">Lorem, ipsum dolor sit amet consectetu. Architecto quas.</span>
+                </div>
+                <div class="div_percentual_info">
+                    <p class="percentual">5%</p>
+                    <span class="info_percentual">Lorem, ipsum dolor sit amet consectetu. Architecto quas.</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao flex flex-col gap-10 bg-[linear-gradient(to_top,#0D0D0D_0%,#CC6CE61A_100%)]">
+            <p class="texto_efeito_colorir">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, facere recusandae.</p>
+
+            <p class="texto_efeito_colorir">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, facere recusandae.</p>
+
+            <p class="texto_efeito_colorir">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, facere recusandae.</p>
+        </section>
+
+        <section class="secao" id="parceiros">
+            <div>
+                <h2 class="titulo_secao"><span class="colorido">Empresas que acreditam</span> no 50BUÉ.</h2>
+                <p class="texto_secao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quia doloribus, cupiditate nulla magnam error.</p>
+            </div>
+            <div class="relative before:top-0 before:-left-1 before:w-12 before:z-10 before:content-[''] before:h-full before:overflow-hidden before:absolute before:pointer-events-none before:bg-[linear-gradient(to_right,#0D0D0D_80%,transparent_100%)] after:top-0 after:w-12 after:z-10 after:content-[''] after:h-full after:overflow-hidden after:absolute after:pointer-events-none after:bg-[linear-gradient(to_left,#0D0D0D_80%,transparent_100%)] after:-right-1">
+                <div class="overflow-hidden">
+                    <div class="flex flex-nowrap w-max animacao_scroll">
+                        <img src="assets/img/logo_parceiro_baobabay.webp" alt="imagem do parceiro baobabay" class="img_logo_parceiro">
+                        <img src="assets/img/logo_parceiro_freshmart.webp" alt="imagem do parceiro baobabay" class="img_logo_parceiro">
+                        <img src="assets/img/logo_parceiro_deskontao.webp" alt="imagem do parceiro baobabay" class="img_logo_parceiro">
+                        <img src="assets/img/logo_parceiro_suzuki.webp" alt="imagem do parceiro baobabay" class="img_logo_parceiro">
+                        <img src="assets/img/logo_parceiro_baobabay.webp" alt="imagem do parceiro baobabay" class="img_logo_parceiro">
+                        <img src="assets/img/logo_parceiro_baobabay.webp" alt="imagem do parceiro baobabay" class="img_logo_parceiro">
+                        <!-- Bloco 2 -->
+                        <img src="assets/img/logo_parceiro_baobabay.webp" alt="imagem do parceiro baobabay" class="img_logo_parceiro">
+                        <img src="assets/img/logo_parceiro_freshmart.webp" alt="imagem do parceiro baobabay" class="img_logo_parceiro">
+                        <img src="assets/img/logo_parceiro_deskontao.webp" alt="imagem do parceiro baobabay" class="img_logo_parceiro">
+                        <img src="assets/img/logo_parceiro_suzuki.webp" alt="imagem do parceiro baobabay" class="img_logo_parceiro">
+                        <img src="assets/img/logo_parceiro_baobabay.webp" alt="imagem do parceiro baobabay" class="img_logo_parceiro">
+                        <img src="assets/img/logo_parceiro_baobabay.webp" alt="imagem do parceiro baobabay" class="img_logo_parceiro">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <h3 class="px-9">
+            <p class="text-center font-spartan font-bold text-3xl bg-clip-text text-transparent bg-[linear-gradient(90deg,#F5F5F5_0%,#B0B0B0_50%,#A0A0A0_100%)]">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </h3>
+
+        <footer class="px-9 pb-9 mt-11 bg-[linear-gradient(180deg,#0D0D0D_0%,#cc6ce617_100%)]">
+            <nav class="flex flex-col items-center">
+                <a href="#" class="font-bebas text-[#F5F5F5] text-4xl" target="_top"><span class="colorido">50</span>BUÉ<span class="colorido">.</span></a>
+                <nav class="flex flex-wrap items-center justify-center gap-1">
+                    <a href="#" class="link_rodape">Regras</a>
+                    <a href="#" class="link_rodape">Termos e Condições</a>
+                    <a href="#" class="link_rodape">Políticas de Privacidade</a>
+                </nav>
+            </nav>
+
+            <hr class="border-[#808080] w-1/2 m-auto my-6">
+
+            <nav class="flex gap-3 flex-wrap justify-center">
+                <a href="#" class="link_social_media">Instagram</a>
+                <a href="#" class="link_social_media">WhatsApp</a>
+                <a href="#" class="link_social_media">Facebook</a>
+                <a href="#" class="link_social_media">GitHub</a>
+                <a href="#" class="link_social_media">YouTube</a>
+                <a href="#" class="link_social_media">TikTok</a>
+            </nav>
+
+            <nav class="flex flex-col items-center justify-center mt-4">
+                <address class="font-roboto text-[#F5F5F5] font-light text-[13px]" style="font-style: normal;">Luanda, Luanda, Angola</address>
+                <span class="text-[#F5F5F5] font-light font-roboto text-[13px] text-center mt-1.5">&copy;2026 — <a class="colorido font-bold hover:underline">Omni360 Tecnologias Angola</a> — Todos os direitos reservados</span>
+            </nav>
+        </footer>
     </main>
 </body>
 </html>

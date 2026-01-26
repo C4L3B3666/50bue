@@ -11,8 +11,18 @@
     @apply text-[#CB6CE6]
 }
 
+.menu_mobile {
+    clip-path: circle(100px at 32rem -5rem);
+    @apply absolute flex-col h-screen w-screen top-0 left-0 justify-between pt-16 pb-6 items-center bg-[#0D0D0D] inset-0 pointer-events-none transition-all duration-1000 ease-in flex
+}
+
 .opcao_menu {
-    @apply font-roboto font-normal
+    @apply font-roboto hover:opacity-70 transition-opacity duration-300
+}
+
+header.ativado .menu_mobile  {
+    clip-path: circle(1000px at 0rem 0rem);
+    @apply pointer-events-auto
 }
 
 .botao {
@@ -27,12 +37,16 @@
     @apply rounded-r-2xl 
 }
 
+.botao_extra {
+    @apply px-2 py-0.5 font-roboto text-[14px] rounded-full  font-normal text-[#CB6CE6] cursor-pointer border border-[#80808078] rounded-r-2xl
+}
+
 .linha_menu_hamburguer {
     @apply bg-[#F5F5F5] w-7 h-0.5 rounded-4xl nth-[1]:w-4.5
 }
 
 .secao {
-    @apply px-9
+    @apply px-9 pt-16
 }
 
 .titulo_secao {
@@ -48,14 +62,22 @@
 }
 
 .botao_ativar_numero {
-    @apply bg-transparent shadow-[0] border-[#80808078] opacity-60
+    @apply bg-transparent shadow-[0] border-[#80808078] opacity-60 text-[12px]
 }
 
 .botao_ativar_numero.ativo {
     @apply bg-[#CB6CE6] border-[#CB6CE6] opacity-100 shadow-[0_0_15px_#cb6ce6e6]
 }
 
+.texto_tipo_ativacao {
+    @apply text-[#F5F5F5] font-spartan my-2 text-center
+}
+
 .input_selecionar_numero {
+    @apply hidden
+}
+
+.input_gerar_numero {
     @apply hidden
 }
 
@@ -63,12 +85,25 @@
     @apply text-[#F5F5F5] opacity-15 border border-[#F5F5F5] py-1 px-3.5 rounded-full font-spartan font-bold text-[15pt] cursor-pointer hover:opacity-100 hover:border-[#CB6CE6] hover:bg-[#CB6CE6] hover:shadow-[0_0_15px_#cb6ce6e6]
 }
 
+.label_gerar_numero {
+    @apply text-[#CB6CE6] font-spartan text-7xl font-semibold
+}
+
 .input_selecionar_numero:checked + .label_selecionar_numero {
     @apply opacity-100 border-[#CB6CE6] bg-[#CB6CE6] shadow-[0_0_15px_#cb6ce6e6]
 }
 
+.div_content_ranking {
+    @apply overflow-x-scroll px-9 pt-6 mt-2 relative 
+}
+
+.div_content_ranking::-webkit-scrollbar,
+.content_card_premio::-webkit-scrollbar {
+    @apply hidden
+}
+
 .card_ranking {
-    @apply border border-[#8080802a] rounded-2xl flex flex-col w-60 h-60 justify-around py-2 px-4 relative overflow-hidden
+    @apply border border-[#8080802a] rounded-2xl flex flex-col w-60 h-60 justify-around py-2 px-4 relative overflow-hidden shadow-[0_0_15px_#000]
 }
 
 .posicao_ranking {
@@ -96,20 +131,8 @@
     @apply absolute -bottom-48
 }
 
-.carousel_botao {
-    @apply absolute text-2xl w-9
-}
-
-.carousel_botao.anterior {
-    @apply left-4
-}
-
-.carousel_botao.proximo {
-    @apply right-2
-}
-
 .card_premio {
-    @apply border border-[#8080802a] p-4 rounded-2xl w-80 
+    @apply border border-[#8080802a] p-4 rounded-2xl shadow-[0_0_15px_#000] min-w-[26%]
 }
 
 .texto_premio_card_premio {
@@ -137,11 +160,19 @@
 }
 
 .card_fundadores {
-    @apply flex flex-col items-center gap-2 border border-[#8080802a] rounded-2xl p-8 w-11/12 top-20 sticky bg-[#0D0D0D]
+    @apply flex flex-col items-center gap-2 border border-[#8080802a] rounded-2xl p-8 w-11/12 top-20 sticky bg-[#0D0D0D] shadow-[0_0_15px_#000] transition-all duration-700
+}
+
+.card_fundadores.visto {
+    @apply nth-[1]:rotate-6 nth-[2]:-rotate-6 nth-[3]:rotate-2 nth-[4]:-rotate-3 nth-[5]:rotate-4
 }
 
 .img_fundador {
-    @apply pointer-events-none
+    @apply pointer-events-none grayscale-100 transition-all duration-3000
+}
+
+.card_fundadores.visto .img_fundador {
+    @apply grayscale-0
 }
 
 .nome_fundador {
@@ -154,4 +185,54 @@
 
 .hr_fundador {
     @apply border-[#808080] w-1/2 
+}
+
+.div_percentual_info {
+    @apply flex gap-4 
+}
+
+.percentual {
+    @apply text-[#F5F5F5] text-6xl font-bold font-spartan w-47 text-right
+}
+
+.percentual_maior {
+    @apply text-[#CB6CE6]
+}
+
+.info_percentual {
+    @apply text-[#F5F5F5] font-spartan font-medium w-full
+}
+
+.texto_efeito_colorir {
+    @apply text-[#F5F5F5] font-roboto text-center font-semibold text-[22px] opacity-15 transition-all duration-500 ease-in
+}
+
+.texto_efeito_colorir.colorido {
+    @apply text-[#CB6CE6] opacity-100 
+}
+
+.img_logo_parceiro {
+    @apply w-44
+}
+
+.animacao_scroll {
+    animation: animacao_scroll 30s linear infinite;
+}
+
+@keyframes animacao_scroll {
+    0% { 
+        transform: translateX(0); 
+    }
+    
+    100% { 
+        transform: translateX(-50%); 
+    }
+}
+
+.link_rodape {
+    @apply font-spartan opacity-65 text-[#F5F5F5] p-0.5 hover:underline text-[14px]
+}
+
+.link_social_media {
+    @apply font-spartan text-[#F5F5F5] text-[22px] font-semibold opacity-90
 }
