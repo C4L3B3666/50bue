@@ -11,18 +11,12 @@
     @apply text-[#CB6CE6]
 }
 
-.menu_mobile {
-    clip-path: circle(100px at 32rem -5rem);
-    @apply absolute flex-col h-screen w-screen top-0 left-0 justify-between pt-16 pb-6 items-center bg-[#0D0D0D] inset-0 pointer-events-none transition-all duration-1000 ease-in flex
-}
-
 .opcao_menu {
-    @apply font-roboto hover:opacity-70 transition-opacity duration-300
+    @apply font-roboto hover:opacity-70 transition-opacity duration-300 lg:p-1
 }
 
 header.ativado .menu_mobile  {
-    clip-path: circle(1000px at 0rem 0rem);
-    @apply pointer-events-auto
+    @apply pointer-events-auto [clip-path:circle(1000px_at_0rem_0rem)] sm:[clip-path:circle(1500px_at_0rem_0rem)]
 }
 
 .botao {
@@ -45,14 +39,6 @@ header.ativado .menu_mobile  {
     @apply bg-[#F5F5F5] w-7 h-0.5 rounded-4xl nth-[1]:w-4.5
 }
 
-.secao {
-    @apply px-9 pt-16
-}
-
-.titulo_secao {
-    @apply text-5xl text-[#F5F5F5] font-spartan font-bold
-}
-
 .texto_secao {
     @apply text-[#F5F5F5] font-roboto font-light
 }
@@ -62,7 +48,7 @@ header.ativado .menu_mobile  {
 }
 
 .botao_ativar_numero {
-    @apply bg-transparent shadow-[0] border-[#80808078] opacity-60 text-[12px]
+    @apply bg-transparent shadow-[0] border-none opacity-60 text-[12px] sm:w-full md:w-[20%] lg:w-full
 }
 
 .botao_ativar_numero.ativo {
@@ -94,7 +80,7 @@ header.ativado .menu_mobile  {
 }
 
 .div_content_ranking {
-    @apply overflow-x-scroll px-9 pt-6 mt-2 relative 
+    @apply overflow-x-scroll px-9 pt-6 mt-2 relative sm:px-20 lg:py-6 lg:px-0 lg:overflow-x-hidden
 }
 
 .div_content_ranking::-webkit-scrollbar,
@@ -103,7 +89,7 @@ header.ativado .menu_mobile  {
 }
 
 .card_ranking {
-    @apply border border-[#8080802a] rounded-2xl flex flex-col w-60 h-60 justify-around py-2 px-4 relative overflow-hidden shadow-[0_0_15px_#000]
+    @apply border border-[#8080802a] rounded-2xl flex flex-col w-60 h-60 justify-around py-2 px-4 relative overflow-hidden shadow-[0_0_15px_#000] nth-[1]:-rotate-3 nth-[2]:rotate-3 nth-[3]:-rotate-2 nth-[4]:-rotate-2 nth-[5]:rotate-3 lg:nth-[1]:-rotate-2
 }
 
 .posicao_ranking {
@@ -160,7 +146,7 @@ header.ativado .menu_mobile  {
 }
 
 .card_fundadores {
-    @apply flex flex-col items-center gap-2 border border-[#8080802a] rounded-2xl p-8 w-11/12 top-20 sticky bg-[#0D0D0D] shadow-[0_0_15px_#000] transition-all duration-700
+    @apply flex flex-col items-center gap-2 border border-[#8080802a] rounded-2xl p-8 w-11/12 top-20 sticky bg-[#0D0D0D] shadow-[0_0_15px_#000] transition-all duration-700 sm:w-8/12 lg:w-96
 }
 
 .card_fundadores.visto {
@@ -188,11 +174,11 @@ header.ativado .menu_mobile  {
 }
 
 .div_percentual_info {
-    @apply flex gap-4 
+    @apply flex gap-4 sm:gap-0 sm:w-55 sm:flex-col sm:items-center sm:justify-center sm:text-center sm:p-2.5 sm:rounded-lg sm:border sm:border-[#8080802a] lg:border-none lg:flex-row lg:w-full lg:text-start lg:p-0 lg:justify-start
 }
 
 .percentual {
-    @apply text-[#F5F5F5] text-6xl font-bold font-spartan w-47 text-right
+    @apply text-[#F5F5F5] text-6xl font-bold font-spartan w-47 text-right sm:w-auto lg:w-47
 }
 
 .percentual_maior {
@@ -204,7 +190,7 @@ header.ativado .menu_mobile  {
 }
 
 .texto_efeito_colorir {
-    @apply text-[#F5F5F5] font-roboto text-center font-semibold text-[22px] opacity-15 transition-all duration-500 ease-in
+    @apply text-[#F5F5F5] font-roboto text-center font-semibold text-[22px] opacity-15 transition-all duration-500 ease-in sm:w-[95%] lg:w-[40%] lg:text-[27px]
 }
 
 .texto_efeito_colorir.colorido {
@@ -212,14 +198,10 @@ header.ativado .menu_mobile  {
 }
 
 .img_logo_parceiro {
-    @apply w-44
+    @apply w-44 lg:w-40 lg:border lg:border-[#8080802a] lg:h-40 lg:p-1 lg:rounded-lg lg:hover:border-[#CB6CE6] lg:hover:scale-105 lg:transition-all lg:duration-500
 }
 
-.animacao_scroll {
-    animation: animacao_scroll 30s linear infinite;
-}
-
-@keyframes animacao_scroll {
+@keyframes animacaoScroll {
     0% { 
         transform: translateX(0); 
     }
@@ -234,5 +216,5 @@ header.ativado .menu_mobile  {
 }
 
 .link_social_media {
-    @apply font-spartan text-[#F5F5F5] text-[22px] font-semibold opacity-90
+    @apply font-spartan text-[#F5F5F5] text-[22px] font-semibold opacity-90 lg:text-4xl
 }
