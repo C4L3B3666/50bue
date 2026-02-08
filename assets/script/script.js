@@ -49,3 +49,20 @@ const observador = new IntersectionObserver(entrar => {
 }, {threshold: 0.7});
 document.querySelectorAll(".card_fundadores").forEach(cards => observador.observe(cards))
 // EFEITO CARDS FUNDADORES
+
+
+// EFEITO ESTRELAS 
+function criarEstrelas(quantidade) {
+    const container = document.querySelector(".div_estrelas")
+        for (let i = 0; i < quantidade; i++) {
+            const estrelas = document.createElement('div')
+            estrelas.className = 'estrelas inset-0 w-[2px] h-[2px] rounded-full bg-[radial-gradient(circle_at_15%_20%,white_1px,transparent_2px),radial-gradient(circle_at_85%_60%,white_1px,transparent_2px),radial-gradient(circle_at_40%_80%,#DDD_1px,transparent_2px)] absolute shadow-[0_0_5px_#F5F5F5] bg-[#F5F5F5] opacity-70 -z-1 animate-[brilhoEstrela_4s_infinite_ease-in-out]'
+            estrelas.style.left = Math.random() * 100 + '100%'
+            estrelas.style.top = Math.random() * 100 + '100%'
+            estrelas.style.animationDelay = Math.random() * 5 + 's'
+            estrelas.style.animationDuration = (Math.random() * 3 + 2) + 's'
+            container.appendChild(estrelas)
+        }
+}
+criarEstrelas(200)
+// EFEITO ESTRELAS 

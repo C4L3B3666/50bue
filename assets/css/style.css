@@ -43,6 +43,17 @@ header.ativado .menu_mobile  {
     @apply text-[#F5F5F5] font-roboto font-light
 }
 
+@keyframes brilhoEstrela {
+    0%, 100% {
+        opacity: .1;
+        transform: scale(.8)
+    }
+    50% {
+        opacity: .5;
+        transform: scale(1.1)
+    }
+}
+
 .efeito_luz {
     @apply w-64 h-64 rounded-full bg-[radial-gradient(circle,#CB6CE6_0%,#0D0D0D_100%)] -z-10 opacity-60 blur-2xl
 }
@@ -71,12 +82,29 @@ header.ativado .menu_mobile  {
     @apply text-[#F5F5F5] opacity-15 border border-[#F5F5F5] py-1 px-3.5 rounded-full font-spartan font-bold text-[15pt] cursor-pointer hover:opacity-100 hover:border-[#CB6CE6] hover:bg-[#CB6CE6] hover:shadow-[0_0_15px_#cb6ce6e6]
 }
 
+.label_numero_selecionado {
+    @apply text-[#F5F5F5] border border-[#CB6CE6] py-1 px-3.5 rounded-full font-spartan font-bold text-[15pt] bg-[#CB6CE6] shadow-[0_0_15px_#cb6ce6e6]
+}
+
 .label_gerar_numero {
     @apply text-[#CB6CE6] font-spartan text-7xl font-semibold
 }
 
+.texto_info {
+    @apply text-[#F5F5F5] font-spartan text-center w-[60%] m-auto pt-4 text-[13px] opacity-70
+}
+
 .input_selecionar_numero:checked + .label_selecionar_numero {
-    @apply opacity-100 border-[#CB6CE6] bg-[#CB6CE6] shadow-[0_0_15px_#cb6ce6e6]
+    @apply border-[#CB6CE6] bg-[#CB6CE6] shadow-[0_0_15px_#cb6ce6e6] animate-[animaBotaoSelecao_.7s_ease-in] opacity-100
+}
+
+@keyframes animaBotaoSelecao {
+    0%, 100% {
+        opacity: 100%
+    }
+    50% {
+        opacity: .1
+    }
 }
 
 .div_content_ranking {
@@ -118,7 +146,7 @@ header.ativado .menu_mobile  {
 }
 
 .card_premio {
-    @apply border border-[#8080802a] p-4 rounded-2xl shadow-[0_0_15px_#000] min-w-[26%]
+    @apply border border-[#8080802a] p-4 rounded-2xl shadow-[0_0_15px_#000] min-w-[26%] bg-[#0d0d0d]
 }
 
 .texto_premio_card_premio {
@@ -181,7 +209,7 @@ header.ativado .menu_mobile  {
     @apply text-[#F5F5F5] text-6xl font-bold font-spartan w-47 text-right sm:w-auto lg:w-47
 }
 
-.percentual_maior {
+.percentual_destaque {
     @apply text-[#CB6CE6]
 }
 
@@ -197,8 +225,12 @@ header.ativado .menu_mobile  {
     @apply text-[#CB6CE6] opacity-100 
 }
 
+.div_img_parceiro {
+    @apply flex justify-center items-center xl:border xl:border-[#8080802a] xl:hover:scale-[1.08] xl:h-40 xl:p-1 xl:rounded-lg pointer-events-none xl:transition-all xl:duration-300 xl:pointer-events-auto xl:hover:border-[#CB6CE6] nth-[7]:lg:hidden nth-[8]:lg:hidden nth-[9]:lg:hidden nth-[10]:lg:hidden  nth-[11]:lg:hidden nth-[12]:lg:hidden
+}
+
 .img_logo_parceiro {
-    @apply w-44 xl:w-40 xl:border xl:border-[#8080802a] xl:h-40 xl:p-1 xl:rounded-lg xl:hover:border-[#CB6CE6] xl:hover:scale-105 xl:transition-all xl:duration-500
+    @apply w-44 xl:w-40 brightness-0 invert 
 }
 
 @keyframes animacaoScroll {
