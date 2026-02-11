@@ -226,7 +226,7 @@ header.ativado .menu_mobile  {
 }
 
 .div_img_parceiro {
-    @apply flex justify-center items-center xl:border xl:border-[#8080802a] xl:hover:scale-[1.08] xl:h-40 xl:p-1 xl:rounded-lg pointer-events-none xl:transition-all xl:duration-300 xl:pointer-events-auto xl:hover:border-[#CB6CE6] nth-[7]:lg:hidden nth-[8]:lg:hidden nth-[9]:lg:hidden nth-[10]:lg:hidden  nth-[11]:lg:hidden nth-[12]:lg:hidden
+    @apply flex justify-center items-center overflow-hidden w-62.5 xl:w-auto xl:border xl:border-[#8080802a] xl:hover:scale-[1.08] xl:h-40 xl:p-1 xl:rounded-lg pointer-events-none xl:transition-all xl:duration-300 xl:pointer-events-auto xl:hover:border-[#CB6CE6] nth-[7]:lg:hidden nth-[8]:lg:hidden nth-[9]:lg:hidden nth-[10]:lg:hidden  nth-[11]:lg:hidden nth-[12]:lg:hidden
 }
 
 .img_logo_parceiro {
