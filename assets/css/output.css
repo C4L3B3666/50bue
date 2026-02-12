@@ -8,6 +8,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-white: #fff;
     --spacing: 0.25rem;
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
@@ -581,6 +582,9 @@
   }
   .text-transparent {
     color: transparent;
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .uppercase {
     text-transform: uppercase;
@@ -2176,6 +2180,18 @@ header.ativado .menu_mobile {
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
   color: transparent;
+}
+.corpo_extra {
+  height: 100vh;
+  background-image: radial-gradient(ellipse at bottom,#0F001A 0%,#000 100%);
+}
+.contentor_estrelas {
+  pointer-events: none;
+  position: fixed;
+  inset: calc(var(--spacing) * 0);
+  z-index: calc(1 * -1);
+  height: calc(var(--spacing) * 56);
+  width: calc(var(--spacing) * 56);
 }
 @property --tw-scroll-snap-strictness {
   syntax: "*";

@@ -274,3 +274,17 @@ header.ativado .menu_mobile  {
 .subtitulo_pagina_extra {
     @apply font-spartan text-transparent font-bold text-5xl bg-clip-text bg-[linear-gradient(90deg,#CB6CE6_0%,#CB6CE6_50%,#F5F5F5_100%)] text-[40px]
 }
+
+/* TERMOS E CONDIÇÕES, POLÍTICA DE PRIVACIDADE E REGRAS GERAIS  */
+
+.corpo_extra {
+    @apply bg-[radial-gradient(ellipse_at_bottom,#0F001A_0%,#000_100%)] h-screen
+}
+
+.contentor_estrelas {
+    @apply h-56 w-56 inset-0 fixed -z-1 pointer-events-none
+}
+
+.estrela_extra {
+    @appply inset-0 absolute bg-[radial-gradient(circle_at_bottom,white_1px,transparent_2px),radial-gradient(circle_at_bottom,white_1px,transparent_2px),radial-gradient(circle_at_bottom,#DDD_1px,transparent_2px)] bg-size-[200px_200px,180px_180px,220px_220px] bg-transparent opacity-70
+}
