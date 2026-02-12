@@ -386,9 +386,6 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
-  .gap-3 {
-    gap: calc(var(--spacing) * 3);
-  }
   .gap-3\.5 {
     gap: calc(var(--spacing) * 3.5);
   }
@@ -489,6 +486,9 @@
   }
   .p-1\.5 {
     padding: calc(var(--spacing) * 1.5);
+  }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
@@ -1390,6 +1390,9 @@ header.ativado .menu_mobile {
     clip-path: circle(1500px at 0rem 0rem);
   }
 }
+.fa-arrow-down {
+  rotate: calc(135deg * -1);
+}
 .botao {
   cursor: pointer;
   border-radius: calc(infinity * 1px);
@@ -1738,6 +1741,7 @@ header.ativado .menu_mobile {
   bottom: calc(var(--spacing) * -48);
 }
 .card_premio {
+  position: relative;
   min-width: 26%;
   border-radius: var(--radius-2xl);
   border-style: var(--tw-border-style);
@@ -1747,6 +1751,13 @@ header.ativado .menu_mobile {
   padding: calc(var(--spacing) * 4);
   --tw-shadow: 0 0 15px var(--tw-shadow-color, #000);
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.fa-arrow-down.icon-premio {
+  position: absolute;
+  top: calc(var(--spacing) * 4);
+  right: calc(var(--spacing) * 4);
+  color: #F5F5F5;
+  opacity: 50%;
 }
 .texto_premio_card_premio {
   font-family: var(--font-spartan);
@@ -2110,7 +2121,12 @@ header.ativado .menu_mobile {
   --tw-font-weight: var(--font-weight-semibold);
   font-weight: var(--font-weight-semibold);
   color: #F5F5F5;
-  opacity: 90%;
+  opacity: 65%;
+  &:hover {
+    @media (hover: hover) {
+      opacity: 80%;
+    }
+  }
   @media (width >= 80rem) {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
