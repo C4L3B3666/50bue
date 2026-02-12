@@ -8,7 +8,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-white: #fff;
     --spacing: 0.25rem;
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
@@ -582,9 +581,6 @@
   }
   .text-transparent {
     color: transparent;
-  }
-  .text-white {
-    color: var(--color-white);
   }
   .uppercase {
     text-transform: uppercase;
@@ -2182,8 +2178,10 @@ header.ativado .menu_mobile {
   color: transparent;
 }
 .corpo_extra {
-  height: 100vh;
+  margin: calc(var(--spacing) * 0);
+  height: 100%;
   background-image: radial-gradient(ellipse at bottom,#0F001A 0%,#000 100%);
+  padding: calc(var(--spacing) * 0);
 }
 .contentor_estrelas {
   pointer-events: none;
@@ -2192,6 +2190,40 @@ header.ativado .menu_mobile {
   z-index: calc(1 * -1);
   height: calc(var(--spacing) * 56);
   width: calc(var(--spacing) * 56);
+}
+.estrela_extra {
+  position: absolute;
+  inset: calc(var(--spacing) * 0);
+  animation: piscaEstrela 10s infinite alternate ease-in-out;
+  background-color: transparent;
+  background-image: radial-gradient(circle at 15% 20%,white 1px,transparent 2px),radial-gradient(circle at 85% 60%,white 1px,transparent 2px),radial-gradient(circle at 40% 80%,#DDD 1px,transparent 2px);
+  background-size: 200px 200px,180px 180px,220px 220px;
+  &:nth-child(2) {
+    animation: piscaEstrela 14s infinite alternate ease-in-out;
+  }
+  &:nth-child(2) {
+    background-size: 300px 300px,250px 250px,280px 280px;
+  }
+  &:nth-child(2) {
+    opacity: 50%;
+  }
+  &:nth-child(3) {
+    animation: piscaEstrela 20s infinite alternate ease-in-out;
+  }
+  &:nth-child(3) {
+    background-size: 400px 400px,350px 350px,380px 380px;
+  }
+  &:nth-child(3) {
+    opacity: 50%;
+  }
+}
+@keyframes piscaEstrela {
+  0%, 100% {
+    opacity: .4;
+  }
+  50% {
+    opacity: .9;
+  }
 }
 @property --tw-scroll-snap-strictness {
   syntax: "*";

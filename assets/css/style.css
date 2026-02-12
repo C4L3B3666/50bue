@@ -278,7 +278,7 @@ header.ativado .menu_mobile  {
 /* TERMOS E CONDIÇÕES, POLÍTICA DE PRIVACIDADE E REGRAS GERAIS  */
 
 .corpo_extra {
-    @apply bg-[radial-gradient(ellipse_at_bottom,#0F001A_0%,#000_100%)] h-screen
+    @apply bg-[radial-gradient(ellipse_at_bottom,#0F001A_0%,#000_100%)] h-full m-0 p-0
 }
 
 .contentor_estrelas {
@@ -286,5 +286,14 @@ header.ativado .menu_mobile  {
 }
 
 .estrela_extra {
-    @appply inset-0 absolute bg-[radial-gradient(circle_at_bottom,white_1px,transparent_2px),radial-gradient(circle_at_bottom,white_1px,transparent_2px),radial-gradient(circle_at_bottom,#DDD_1px,transparent_2px)] bg-size-[200px_200px,180px_180px,220px_220px] bg-transparent opacity-70
+    @apply inset-0 absolute bg-[radial-gradient(circle_at_15%_20%,white_1px,transparent_2px),radial-gradient(circle_at_85%_60%,white_1px,transparent_2px),radial-gradient(circle_at_40%_80%,#DDD_1px,transparent_2px)] bg-size-[200px_200px,180px_180px,220px_220px] bg-transparent animate-[piscaEstrela_10s_infinite_alternate_ease-in-out] nth-[2]:bg-size-[300px_300px,250px_250px,280px_280px] nth-[2]:opacity-50 nth-[2]:animate-[piscaEstrela_14s_infinite_alternate_ease-in-out] nth-[3]:bg-size-[400px_400px,350px_350px,380px_380px] nth-[3]:opacity-50 nth-[3]:animate-[piscaEstrela_20s_infinite_alternate_ease-in-out]
+}
+
+@keyframes piscaEstrela {
+    0%, 100% {
+        opacity: .4;
+    }
+    50% {
+        opacity: .9;
+    }
 }
