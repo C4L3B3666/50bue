@@ -57,8 +57,8 @@ function criarEstrelas(quantidade) {
         for (let i = 0; i < quantidade; i++) {
             const estrelas = document.createElement('div')
             estrelas.className = 'estrelas inset-0 w-[2px] h-[2px] rounded-full bg-[radial-gradient(circle_at_15%_20%,white_1px,transparent_2px),radial-gradient(circle_at_85%_60%,white_1px,transparent_2px),radial-gradient(circle_at_40%_80%,#DDD_1px,transparent_2px)] absolute shadow-[0_0_5px_#F5F5F5] bg-[#F5F5F5] opacity-70 -z-1 animate-[brilhoEstrela_4s_infinite_ease-in-out]'
-            estrelas.style.left = Math.random() * 100 + '100%'
-            estrelas.style.top = Math.random() * 100 + '100%'
+            estrelas.style.left = Math.random() * 100 + '%'
+            estrelas.style.top = Math.random() * 100 + '%'
             estrelas.style.animationDelay = Math.random() * 5 + 's'
             estrelas.style.animationDuration = (Math.random() * 3 + 2) + 's'
             container.appendChild(estrelas)
