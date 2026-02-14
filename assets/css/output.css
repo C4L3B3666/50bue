@@ -2205,7 +2205,7 @@ header.ativado .menu_mobile {
   background-color: transparent;
   background-image: radial-gradient(circle at 15% 20%,#F5F5F5 1px,transparent 2px),radial-gradient(circle at 85% 60%,#F5F5F5 1px,transparent 2px),radial-gradient(circle at 40% 80%,#DDD 1px,transparent 2px);
   background-size: 200px 200px,180px 180px,220px 220px;
-  opacity: 70%;
+  opacity: 20%;
   &:nth-child(1) {
     animation: piscaEstrelaExtras 20s infinite alternate ease-in-out;
   }
@@ -2228,9 +2228,11 @@ header.ativado .menu_mobile {
 @keyframes piscaEstrelaExtras {
   0%, 100% {
     opacity: .1;
+    transform: translateY(100vh) translateX(70vh) rotate(360deg);
   }
   50% {
     opacity: .9;
+    transform: translateY(0vh) translateX(3vh) rotate(-95deg);
   }
 }
 @property --tw-scale-x {
