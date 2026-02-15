@@ -7,6 +7,35 @@
     --font-spartan: "League Spartan", system-ui, sans-serif;
 }
 
+body.mostra {
+    @apply overflow-hidden
+}
+
+.contetor_form {
+    @apply bg-[radial-gradient(ellipse_at_bottom,#0F001A_10%,#000_100%)] flex items-center justify-center h-screen w-screen absolute top-0 gap-3.5 z-50 scale-1 pointer-events-none opacity-0 duration-700 ease-in
+}
+
+.contetor_form.ativado {
+    @apply scale-100 pointer-events-auto opacity-100
+}
+
+.nav_inputs_label {
+    @apply flex flex-col relative
+}
+
+.nav_inputs_label input {
+    @apply border-[#8080802a] border outline-0 font-spartan text-[#F5F5F5] px-2 py-1.5 hover:border-[#CB6CE6] not-placeholder-shown:border-[#CB6CE6] focus:border-[#CB6CE6] duration-700 ease-out
+}
+
+.nav_inputs_label label {
+    @apply text-[#F5F5F5] opacity-65 font-spartan absolute top-1.5 px-0.5 mx-2 duration-700 ease-out
+}
+
+.nav_inputs_label input:focus + label,
+.nav_inputs_label input:not(:placeholder-shown) + label {
+    @apply -top-3 bg-[#CB6CE6] opacity-100 text-[14px]
+}
+
 .colorido {
     @apply text-[#CB6CE6]
 }
