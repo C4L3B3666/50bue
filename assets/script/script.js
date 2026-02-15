@@ -56,19 +56,34 @@ const observador = new IntersectionObserver(entrar => {
 document.querySelectorAll(".card_fundadores").forEach(cards => observador.observe(cards))
 // EFEITO CARDS FUNDADORES
 
-
 // EFEITO ESTRELAS 
-function criarEstrelas(quantidade) {
-    const container = document.querySelector(".div_estrelas")
+function criarEstrelas(seletor, quantidade) {
+    const containers = document.querySelectorAll(seletor)
+
+    containers.forEach(container => {
         for (let i = 0; i < quantidade; i++) {
-            const estrelas = document.createElement('div')
-            estrelas.className = 'estrelas inset-0 w-[2px] h-[2px] rounded-full bg-[radial-gradient(circle_at_15%_20%,white_1px,transparent_2px),radial-gradient(circle_at_85%_60%,white_1px,transparent_2px),radial-gradient(circle_at_40%_80%,#DDD_1px,transparent_2px)] absolute shadow-[0_0_5px_#F5F5F5] bg-[#F5F5F5] opacity-70 -z-1 animate-[brilhoEstrela_4s_infinite_ease-in-out]'
-            estrelas.style.left = Math.random() * 100 + '%'
-            estrelas.style.top = Math.random() * 100 + '%'
-            estrelas.style.animationDelay = Math.random() * 5 + 's'
-            estrelas.style.animationDuration = (Math.random() * 3 + 2) + 's'
-            container.appendChild(estrelas)
+            const estrela = document.createElement('div')
+
+            estrela.className = `
+                estrelas inset-0 w-[2px] h-[2px] rounded-full 
+                bg-[radial-gradient(circle_at_15%_20%,white_1px,transparent_2px),
+                radial-gradient(circle_at_85%_60%,white_1px,transparent_2px),
+                radial-gradient(circle_at_40%_80%,#DDD_1px,transparent_2px)]
+                absolute shadow-[0_0_5px_#F5F5F5] bg-[#F5F5F5] 
+                opacity-70 -z-1 
+                animate-[brilhoEstrela_4s_infinite_ease-in-out]
+            `
+
+            estrela.style.left = Math.random() * 100 + '%'
+            estrela.style.top = Math.random() * 100 + '%'
+            estrela.style.animationDelay = Math.random() * 5 + 's'
+            estrela.style.animationDuration = (Math.random() * 3 + 2) + 's'
+
+            container.appendChild(estrela)
         }
+    })
 }
-criarEstrelas(200)
+
+// Agora funciona para qualquer elemento com essa classe
+criarEstrelas(".div_estrelas", 200)
 // EFEITO ESTRELAS 
