@@ -7,35 +7,6 @@
     --font-spartan: "League Spartan", system-ui, sans-serif;
 }
 
-body.mostra {
-    @apply overflow-hidden
-}
-
-.contetor_form {
-    @apply bg-[radial-gradient(ellipse_at_bottom,#0F001A_10%,#000_100%)] flex items-center justify-center h-screen w-screen absolute top-0 gap-3.5 z-50 scale-1 pointer-events-none opacity-0 duration-700 ease-in
-}
-
-.contetor_form.ativado {
-    @apply scale-100 pointer-events-auto opacity-100
-}
-
-.nav_inputs_label {
-    @apply flex flex-col relative
-}
-
-.nav_inputs_label input {
-    @apply border-[#8080802a] border outline-0 font-spartan text-[#F5F5F5] px-2 py-1.5 hover:border-[#CB6CE6] not-placeholder-shown:border-[#CB6CE6] focus:border-[#CB6CE6] duration-700 ease-out
-}
-
-.nav_inputs_label label {
-    @apply text-[#F5F5F5] opacity-65 font-spartan absolute top-1.5 px-0.5 mx-2 duration-700 ease-out
-}
-
-.nav_inputs_label input:focus + label,
-.nav_inputs_label input:not(:placeholder-shown) + label {
-    @apply -top-3 bg-[#CB6CE6] opacity-100 text-[14px]
-}
-
 .colorido {
     @apply text-[#CB6CE6]
 }
@@ -304,27 +275,56 @@ header.ativado .menu_mobile  {
     @apply font-spartan text-transparent font-bold text-5xl bg-clip-text bg-[linear-gradient(90deg,#CB6CE6_0%,#CB6CE6_50%,#F5F5F5_100%)] text-[40px]
 }
 
-/* TERMOS E CONDIÇÕES, POLÍTICA DE PRIVACIDADE E REGRAS GERAIS  */
+/* FORMULÁRIOS INICIAR SESSÃO E FAZER PARTE  */
+
+.contetor_form {
+    @apply bg-[radial-gradient(ellipse_at_bottom,#0F001A_10%,#000_100%)] flex items-center justify-center h-screen w-screen absolute top-0 gap-3.5 duration-700 ease-in
+}
+
+.nav_inputs_label {
+    @apply flex flex-col relative
+}
+
+.nav_inputs_label input {
+    @apply border-[#8080802a] border outline-0 font-spartan text-[#F5F5F5] px-2 py-1.5 hover:border-[#CB6CE6] not-placeholder-shown:border-[#CB6CE6] focus:border-[#CB6CE6] duration-700 ease-out
+}
+
+.nav_inputs_label label {
+    @apply text-[#F5F5F5] opacity-65 font-spartan absolute top-1.5 px-0.5 mx-2 duration-700 ease-out
+}
+
+.nav_inputs_label input:focus + label,
+.nav_inputs_label input:not(:placeholder-shown) + label {
+    @apply -top-3 bg-[#CB6CE6] opacity-100 text-[13px]
+}
+
+
+/* TERMOS E CONDIÇÕES E POLÍTICAS DE PRIVACIDADE  */
 
 .corpo_extra {
-    @apply m-0 p-0 h-screen overflow-hidden bg-[radial-gradient(ellipse_at_bottom,#0F001A_0%,#000_100%)]
+    @apply bg-[radial-gradient(ellipse_at_top,#0F001A_10%,#000_100%)] h-full px-8 py-10 md:flex md:justify-center md:items-center
 }
 
-.contentor_estrelas_extras {
-    @apply inset-0 -z-10 fixed pointer-events-none
+.titulo_termo_politica {
+    @apply text-[#F5F5F5] text-6xl font-spartan font-bold 
 }
 
-.estrelas_extras {
-    @apply inset-0 absolute bg-transparent bg-[radial-gradient(circle_at_15%_20%,#F5F5F5_1px,transparent_2px),radial-gradient(circle_at_85%_60%,#F5F5F5_1px,transparent_2px),radial-gradient(circle_at_40%_80%,#DDD_1px,transparent_2px)] bg-size-[200px_200px,180px_180px,220px_220px] opacity-20 nth-[2]:opacity-50 nth-[2]:bg-size-[300px_300px,250px_250px,280px_280px] nth-[2]:animate-[piscaEstrelaExtras_14s_infinite_alternate_ease-in-out] nth-[1]:opacity-35 nth-[1]:bg-size-[400px_400px,350px_350px,380px_380px] nth-[1]:animate-[piscaEstrelaExtras_20s_infinite_alternate_ease-in-out]
+.texto_termo_politica {
+    @apply font-spartan text-[#F5F5F5]
 }
 
-@keyframes piscaEstrelaExtras {
-    0%, 100% {
-        opacity: .1;
-        transform: translateY(100vh) translateX(70vh) rotate(360deg)
-    }
-    50% {
-        opacity: .9;
-        transform: translateY(0vh) translateX(3vh) rotate(-95deg)
-    }
+.hr_termo_politica {
+    @apply border border-[#808080] m-auto my-2 opacity-25
+}
+
+.subtitulo_termo_politica {
+    @apply text-[1.5em] text-[#CB6CE6] font-spartan font-bold 
+}
+
+.ul_termos_politica {
+    @apply text-[#F5F5F5] ml-5
+}
+
+.li_termos_politica {
+    @apply mb-1.5 font-spartan
 }

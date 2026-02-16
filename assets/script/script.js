@@ -18,13 +18,6 @@ document.querySelectorAll(".opcao_menu").forEach(link => {
 })
 // EFEITO MENU OCULTO 
 
-document.querySelectorAll(".botao_comecar").forEach(btn => {
-    btn.addEventListener("click", ()=> {
-        document.querySelector(".contetor_form").classList.toggle("ativado")
-        document.querySelector('body').classList.toggle('mostra')
-    })
-})
-
 // EFEITO COLORIR TEXTO
 const textoEfeito = document.querySelectorAll(".texto_efeito_colorir")
 const colorirTexto = ()=> {
@@ -83,7 +76,5 @@ function criarEstrelas(seletor, quantidade) {
         }
     })
 }
-
-// Agora funciona para qualquer elemento com essa classe
 criarEstrelas(".div_estrelas", 200)
 // EFEITO ESTRELAS 
