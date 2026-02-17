@@ -286,6 +286,12 @@
   .mt-11 {
     margin-top: calc(var(--spacing) * 11);
   }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
   .flex {
     display: flex;
   }
