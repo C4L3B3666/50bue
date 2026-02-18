@@ -1796,6 +1796,7 @@ header.ativado .menu_mobile {
   padding: calc(var(--spacing) * 4);
   --tw-shadow: 0 0 15px var(--tw-shadow-color, #000);
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  background: linear-gradient(#0D0D0D, #0D0D0D) padding-box, linear-gradient(35deg, #CB6CE6, #cc6ce62c) border-box;
 }
 .fa-arrow-down.icon-premio {
   position: absolute;
@@ -1864,8 +1865,7 @@ header.ativado .menu_mobile {
   border-radius: var(--radius-2xl);
   border-style: var(--tw-border-style);
   border-width: 1px;
-  border-color: #8080802a;
-  background-color: #0D0D0D;
+  border-color: transparent;
   padding: calc(var(--spacing) * 8);
   --tw-shadow: 0 0 15px var(--tw-shadow-color, #000);
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -1880,6 +1880,7 @@ header.ativado .menu_mobile {
   @media (width >= 64rem) {
     width: calc(var(--spacing) * 96);
   }
+  background: linear-gradient(#0D0D0D, #0D0D0D) padding-box, linear-gradient(35deg, #CB6CE6, #cc6ce62c) border-box;
 }
 .card_fundadores.visto {
   &:nth-child(1) {
