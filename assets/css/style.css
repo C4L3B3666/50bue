@@ -198,7 +198,7 @@ header.ativado .menu_mobile  {
 }
 
 .nome_fundador {
-    @apply text-[#CB6CE6] text-3xl font-spartan font-bold 
+    @apply text-[#CB6CE6] text-3xl font-spartan font-bold
 }
 
 .cargo_fundador {

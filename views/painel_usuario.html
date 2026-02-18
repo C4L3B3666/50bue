@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <title>50BUÉ. | O Seu Painel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --accent: #22c55e;
+            --primary: #3b82f6;
+            --danger: #ef4444;
+            --text: #e2e8f0;
+            --muted: #94a3b8;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            font-family: "Inter";
+            background: var(--bg);
+            color: var(--text);
+        }
+        .sidebar {
+            width: 240px;
+            height: 100vh;
+            position: fixed;
+            background: #0b1220;
+            padding: 20px;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .sidebar a {
+            display: block;
+            color: var(--muted);
+            text-decoration: none;
+            padding: 10px 0;
+            transition: .2s;
+        }
+        .sidebar a:hover {
+            color: white;
+        }
+        .main {
+            margin-left: 240px;
+            padding: 30px;
+        }
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .profile {
+            background: var(--card);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: var(--card);
+            padding: 20px;
+            border-radius: 16px;
+        }
+        .card h3 {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+            color: var(--muted);
+        }
+        .big {
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #334155;
+            border-radius: 10px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            background: var(--accent);
+            width: 0%;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            margin-bottom: 15px;
+        }
+        .number-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .number {
+            background: #334155;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 13px;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table th, .table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #334155;
+            font-size: 14px;
+        }
+        .btn {
+            padding: 8px 14px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+        .btn-sucess {
+            background: var(--accent);
+            color: white;
+        }
+        .btn-danger {
+            background: var(--danger);
+            color: white;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .6);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background: var(--card);
+            padding: 30px;
+            border-radius: 16px;
+            width: 350px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 0;
+            border-radius: 8px; 
+            /* AQUI VAMOS VER DEPOIS  */
+            background: #334155;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                display: none;
+            }
+            .main {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">50BUÉ.</div>
+        <a href="#">Painel</a>
+        <a href="#">Meus Números</a>
+        <a href="#">Sorteios</a>
+        <a href="#">Pagamentos</a>
+        <a href="#">Segurança</a>
+        <a href="#">Sair</a>
+    </div>
+
+    <div class="main">
+
+        <div class="topbar">
+            <h1>O Seu Painel</h1>
+            <div class="profile">Calebe - Conta Verificada</div>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Total de Números</h3>
+                <div class="big" id="totalNumbers">12</div>
+            </div>
+            <div class="card">
+                <h3>Total Investido</h3>
+                <div class="big">600 KZs</div>
+            </div>
+            <div class="card">
+                <h3>Prémio Atual</h3>
+                <div class="big">1.500.000 KZs</div>
+            </div>
+            <div class="card">
+                <h3>Progresso do Sorteio</h3>
+                <div class="big" id="percent">0%</div>
+                <div class="progress-bar">
+                    <div class="progress" id="progressBar"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Meus Números</h2>
+            <div class="number-grid" id="numbers"></div>
+            <br>
+            <button class="btn btn-primary" onclick="openModal()">Comprar Números</button>
+        </div>
+
+        <div class="section">
+            <h2>Histórico de Pagamento</h2>
+            <table>
+                <tr>
+                    <th>Data</th>
+                    <th>Valor</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>10/09/2025</td>
+                    <td>200 KZs</td>
+                    <td style="color: #22c55e;">Confirmado</td>
+                </tr>
+                <tr>
+                    <td>18/19/2025</td>
+                    <td>400 KZs</td>
+                    <td style="color: #22c55e;">Confirmado</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Resultados Anteriores</h2>
+            <p>Sorteio #01 - Número Vencedor: 4088</p>
+            <p>Sorteio #02 - Número Vencedor: 1190</p>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h3>Comprar Números</h3>
+            <input type="number" name="" id="qty">
+            <button class="btn btn-sucess" onclick="buyNumbers()">Confirmar</button>
+            <button class="btn btn-danger" onclick="closeModal()">Cancelar</button>
+        </div>
+    </div>
+
+    <script>
+        let vendidos = 32500;
+        let total = 50000;
+        let porcentagem = Math.floor((vendidos/total)*100)
+
+        document.getElementById("progressBar").style.width = porcentagem+"%";
+        document.getElementById("percent").innerText = porcentagem+"%";
+        let numbersContainer = document.getElementById("numbers");
+        let userNumbers = [1023,2045,3051,4088,5099,6100,711,8122,9133,1010,2222,3333];
+        function renderNumbers() {
+            numbersContainer.innerHTML = ""
+            userNumbers.forEach(n=> {
+                let span = document.createElement("div")
+                span.className = "number"
+                span.innerText = n
+                numbersContainer.appendChild(span)
+            })
+        }
+        renderNumbers();
+
+        function openModal(){
+            document.getElementById("modal").style.display="flex"
+        }
+        function closeModal(){
+            document.getElementById("modal").style.display = "none"
+        }
+        function buyNumbers(){
+            let qty = parseInt(document.getElementById("qty").value);
+            if (!qty || qty < 0) {
+                return
+            }
+            for (let i=0;i<qty;i++) {
+                let random = Math.floor(Math.random()*9000)+1000;
+                userNumbers.push(random);
+            }
+            document.getElementById("totalNumbers").innerText = userNumbers.length;
+            renderNumbers();
+            closeModal();
+        }
+    </script>
+</body>
+</html>
