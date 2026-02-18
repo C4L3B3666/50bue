@@ -186,11 +186,7 @@ header.ativado .menu_mobile  {
 
 .card_fundadores {
   @apply flex flex-col items-center gap-2 p-8 w-11/12 top-20 sticky transition-all duration-700 sm:w-8/12 lg:w-96 rounded-2xl border border-transparent shadow-[0_0_15px_#000];
-  
-  background: 
-    linear-gradient(#0D0D0D, #0D0D0D) padding-box,
-    linear-gradient(35deg, #CB6CE6, #cc6ce62c) border-box;
-
+  background: linear-gradient(#0D0D0D, #0D0D0D) padding-box, linear-gradient(35deg, #CB6CE6, #cc6ce62c) border-box;
 }
 
 
