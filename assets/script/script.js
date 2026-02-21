@@ -78,3 +78,9 @@ function criarEstrelas(seletor, quantidade) {
 }
 criarEstrelas(".div_estrelas", 200)
 // EFEITO ESTRELAS 
+
+// ANO ATUAL HOME E EXTRAS
+document.querySelectorAll(".ano_atual").forEach(ano => {
+    ano.innerHTML = new Date().getFullYear()
+});
+// ANO ATUAL HOME E EXTRAS

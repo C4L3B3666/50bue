@@ -150,10 +150,7 @@ header.ativado .menu_mobile  {
 }
 
 .card_premio {
-    @apply border border-[#8080802a] p-4 rounded-2xl shadow-[0_0_15px_#000] min-w-[26%] bg-[#0d0d0d] relative;
-    background: 
-    linear-gradient(#0D0D0D, #0D0D0D) padding-box,
-    linear-gradient(35deg, #CB6CE6, #cc6ce62c) border-box;
+    @apply border border-[#8080802a] p-4 rounded-2xl shadow-[0_0_15px_#000] min-w-[26%] bg-[#0d0d0d] relative
 }
 
 .fa-arrow-down.icon-premio {
@@ -185,10 +182,8 @@ header.ativado .menu_mobile  {
 }
 
 .card_fundadores {
-  @apply flex flex-col items-center gap-2 p-8 w-11/12 top-20 sticky transition-all duration-700 sm:w-8/12 lg:w-96 rounded-2xl border border-transparent shadow-[0_0_15px_#000];
-  background: linear-gradient(#0D0D0D, #0D0D0D) padding-box, linear-gradient(35deg, #CB6CE6, #cc6ce62c) border-box;
+    @apply flex flex-col items-center gap-2 p-8 w-11/12 top-20 sticky transition-all duration-700 sm:w-8/12 lg:w-96 rounded-2xl border border-[#8080802a] shadow-[0_0_15px_#000] bg-[#0D0D0D]
 }
-
 
 .card_fundadores.visto {
     @apply nth-[1]:rotate-6 nth-[2]:-rotate-6 nth-[3]:rotate-2 nth-[4]:-rotate-3 nth-[5]:rotate-4
@@ -204,7 +199,6 @@ header.ativado .menu_mobile  {
 
 .nome_fundador {
     @apply text-[#CB6CE6] text-3xl font-spartan font-bold
-    /* @apply text-[#25142b] text-3xl font-spartan font-bold */
 }
 
 .cargo_fundador {
@@ -244,7 +238,7 @@ header.ativado .menu_mobile  {
 }
 
 .img_logo_parceiro {
-    @apply w-44 xl:w-40 brightness-0 invert 
+    @apply w-44 xl:w-40 brightness-0 invert pointer-events-none selection:bg-transparent
 }
 
 @keyframes animacaoScroll {
@@ -304,11 +298,10 @@ header.ativado .menu_mobile  {
     @apply -top-3 bg-[#CB6CE6] opacity-100 text-[13px]
 }
 
-
 /* TERMOS E CONDIÇÕES E POLÍTICAS DE PRIVACIDADE  */
 
 .corpo_extra {
-    @apply bg-[radial-gradient(ellipse_at_top,#0F001A_10%,#000_100%)] h-full px-8 py-10 md:flex md:justify-center md:items-center
+    @apply bg-[radial-gradient(ellipse_at_top,#0F001A_10%,#000_100%)] h-full flex flex-col px-8 py-10 md:flex md:justify-center md:items-center
 }
 
 .titulo_termo_politica {
@@ -334,3 +327,9 @@ header.ativado .menu_mobile  {
 .li_termos_politica {
     @apply mb-1.5 font-spartan
 }
+
+.link_rodape_extra {
+    @apply opacity-65 font-spartan underline 
+}
+
+/* PAINEL USUÁRIO E ADMINISTRADOR  */
