@@ -8,6 +8,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="bg-[radial-gradient(ellipse_at_bottom,#0F001A_10%,#000_100%)] h-screen flex items-center justify-center">
-    
+    <nav class="border border-[#8080802a] rounded-2xl shadow-[0_0_15px_#000] w-[95vw] h-[95vh] overflow-hidden flex">
+        <nav class="flex flex-col justify-between border-r border-r-[#8080802a] w-62.5 h-full items-start px-8 py-6 text-[#F5F5F5]">
+            <nav class="flex flex-col gap-3">
+                <a href="painel.html" class="font-bebas text-3xl mb-3"><span class="colorido">50</span>BUÉ<span class="colorido">.</span></a>
+                <nav class="flex flex-col items-start my-2 gap-7">
+                    <button class="botao_side_painel">O Seu Painel</button>
+                    <button class="botao_side_painel">Números Ativados</button>
+                    <button class="botao_side_painel ativo">Pagamentos</button>
+                    <button class="botao_side_painel">Informações</button>
+                    <button class="botao_side_painel">Segurança</button>
+                    <button class="botao_side_painel">Comunidade</button>
+                </nav>
+            </nav>
+            <!-- <div class="border-l border-l-[#8080802a] rounded-md p-2">
+                <h6 class="font-spartan font-bold text-3xl">Felizes por você!</h6>
+                <p class="font-roboto font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, minus. Ratione placeat adipisci expedita, itaque minus vero quaerat aliquam?</p>
+            </div> -->
+            <nav>
+                <div>
+                    <button class="bg-red-500 shadow-[0_0_15px_red] rounded-2xl px-2 py-0.5 cursor-pointer font-roboto text-[11pt]">Quero Sair do Painel</button>
+                </div>
+                <p class="text-[#F5F5F5] opacity-65 font-light font-roboto text-[13px] mt-3">&copy;<span class="ano_atual"></span> <br> <a class="font-bold hover:underline">DominusCode&trade;</a> <br> Todos os direitos reservados.</p>
+            </nav>
+        </nav>
+
+        <nav class="text-[#F5F5F5] py-6 px-8 w-full">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h2 class="font-spartan text-3xl font-bold">Olá, Ninja666!</h2>
+                    <p class="font-roboto font-light text-[#F5F5F5] opacity-65">Que bom vê-lo novamente aqui, no seu painel.</p>
+                </div>
+                <div class="flex flex-col font-spartan">
+                    <small class="font-bold text-green-400">Conta Verificada</small>
+                    <small class="font-bold">Calebe Lukombo</small>
+                    <small><span class="font-bold">ID50:</span> AXE50AJNKOPQ</small>
+                </div>
+            </div>
+            <hr class="border border-[#8080802a] my-3 -ml-8 m-auto w-[200%]">
+            <div class="flex gap-3 w-max">
+
+                <div class="card_info_painel">
+                    <nav>
+                        <h3 class="text_card_painel">Números Ativados</h3>
+                    </nav>
+                    <nav>
+                        <span class="dado_card_painel">2 345</span>
+                    </nav>
+                    <div class="efeito_luz efeito_luz_card_painel"></div>
+                </div>
+
+                <div class="card_info_painel">
+                    <nav>
+                        <h3 class="text_card_painel">Total Desbloqueado</h3>
+                    </nav>
+                    <nav>
+                        <span class="dado_card_painel">2 345 Kzs</span>
+                    </nav>
+                    <div class="efeito_luz efeito_luz_card_painel"></div>
+                </div>
+
+                <div class="card_info_painel">
+                    <nav>
+                        <h3 class="text_card_painel">Progresso</h3>
+                    </nav>
+                    <nav>
+                        <span class="dado_card_painel">45%</span>
+                    </nav>
+                    <div class="efeito_luz efeito_luz_card_painel"></div>
+                </div>
+
+                <div class="card_info_painel">
+                    <nav>
+                        <h3 class="text_card_painel">Posição no Ranking</h3>
+                    </nav>
+                    <nav>
+                        <span class="dado_card_painel">#45</span>
+                    </nav>
+                    <div class="efeito_luz efeito_luz_card_painel"></div>
+                </div>
+
+            </div>
+        </nav>
+    </nav>
+
+    <script>
+        document.querySelectorAll(".ano_atual").forEach(ano =>  {
+            ano.textContent = new Date().getFullYear();
+        })
+    </script>
 </body>
 </html>

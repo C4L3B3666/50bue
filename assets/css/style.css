@@ -333,3 +333,29 @@ header.ativado .menu_mobile  {
 }
 
 /* PAINEL USUÁRIO E ADMINISTRADOR  */
+
+.botao_side_painel {
+    @apply font-spartan uppercase font-semibold opacity-65
+}
+
+.botao_side_painel.ativo {
+    @apply opacity-100
+}
+
+.card_info_painel {
+    @apply border border-[#8080802a] w-60 p-4 h-28 flex flex-col justify-between rounded-md relative overflow-hidden
+}
+
+.text_card_painel {
+    @apply font-spartan uppercase font-bold text-[#F5F5F5] opacity-80
+}
+
+.dado_card_painel {
+    @apply font-spartan font-bold text-3xl 
+}
+
+.efeito_luz_card_painel {
+    @apply absolute left-23 top-22
+}
+
+/* PAINEL USUÁRIO E ADMINISTRADOR  */

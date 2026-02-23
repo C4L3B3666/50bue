@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>50BUÉ. | Regras Gerais</title>
-    <script src="../assets/script/script.js"></script>
     <link rel="stylesheet" href="../assets/css/output.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -12,7 +11,7 @@
     <nav class="border border-[#80808017] p-6 rounded-xl md:w-[70%] xl:w-[50%]">
 
         <h1 class="titulo_termo_politica">Regras Gerais.</h1>
-        <small class="text-[#F5F5F5] font-spartan mb-4">Última Atualização: 14/07/2026</small>
+        <small class="text-[#F5F5F5] font-spartan mb-4">Última Atualização: 22/02/2026</small>
         <p class="texto_termo_politica">Este Regulamento estabelece as regras específicas aplicáveis a dinâmica interativa promocional realizada pelo <strong>50BUÉ.</strong>, disponível através do website https://www.50bue.com/. e canais oficiais. Não participe ou pare de usar imediatamente o 50BUÉ. caso você não concorde totalmente com este Regulamento, os Termos e Condições e a Política de Privacidade estabelecidas por nós.</p>
         
         <hr class="hr_termo_politica">
@@ -189,11 +188,15 @@
             <a href="termos.html" class="link_rodape_extra">Termos e Condições</a>
             <a href="politica.html" class="link_rodape_extra">Política de Privacidade</a>
         </nav>
-        <hr class="hr_termo_politica w-1/2">
-        <p class="text-[#F5F5F5] font-light font-roboto text-[13px] text-center">&copy;2026 — <a href="#" class="font-bold text-[#CB6CE6]">DominusCode</a> — Todos os direitos reservados</p>
+        <hr class="hr_termo_politica w-1/2">        
         <p class="text-[#F5F5F5] font-light font-roboto text-[13px] text-center mt-1.5">&copy;<span class="ano_atual"></span> — <a class="colorido font-bold hover:underline">DominusCode</a> — Todos os direitos reservados</p>
-
     </nav>
 
+    <script>
+        document.querySelectorAll(".ano_atual").forEach(ano =>  {
+        ano.textContent = new Date().getFullYear();
+    })
+    </script>
+    
 </body>
 </html>

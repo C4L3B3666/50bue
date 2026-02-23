@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>50BUÉ. | Política de Privacidade</title>
-    <script src="../assets/script/script.js"></script>
     <link rel="stylesheet" href="../assets/css/output.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -11,7 +10,7 @@
     <nav class="border border-[#80808017] p-6 rounded-xl md:w-[70%] xl:w-[50%]">
 
         <h1 class="titulo_termo_politica">Política de Privacidade.</h1>
-        <small class="text-[#F5F5F5] font-spartan mb-4">Última Atualização: 13/07/2026</small>
+        <small class="text-[#F5F5F5] font-spartan mb-4">Última Atualização: 22/02/2026</small>
         <p class="texto_termo_politica">Esta Política de Privacidade descreve como o 50BUÉ. coleta, utiliza, armazena e protege os dados dos usuários que acessam https://www.50bue.com/ e demais canais oficiais. Ao utilizar nossos serviços, você declara que concorda totalmente com coleta e uso de informações conforme descrito nesta Política de Privacidade.</p>
         
         <hr class="hr_termo_politica">
@@ -160,7 +159,12 @@
             <a href="termos.html" class="link_rodape_extra">Termos e Condições</a>
         </nav>
         <hr class="hr_termo_politica w-1/2">
-        <p class="text-[#F5F5F5] font-light font-roboto text-[13px] text-center">&copy;2026 — <a href="#" class="font-bold text-[#CB6CE6]">DominusCode</a> — Todos os direitos reservados</p>
+        <p class="text-[#F5F5F5] font-light font-roboto text-[13px] text-center mt-1.5">&copy;<span class="ano_atual"></span> — <a class="colorido font-bold hover:underline">DominusCode</a> — Todos os direitos reservados</p>
     </nav>
+    <script>
+        document.querySelectorAll(".ano_atual").forEach(ano =>  {
+        ano.textContent = new Date().getFullYear();
+    })
+    </script>
 </body>
 </html>

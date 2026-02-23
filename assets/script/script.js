@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", ()=> {
+
 const menu = document.querySelector("header")
 const corpo = document.querySelector("body")
 
@@ -80,7 +82,9 @@ criarEstrelas(".div_estrelas", 200)
 // EFEITO ESTRELAS 
 
 // ANO ATUAL HOME E EXTRAS
-document.querySelectorAll(".ano_atual").forEach(ano => {
-    ano.innerHTML = new Date().getFullYear()
-});
+    document.querySelectorAll(".ano_atual").forEach(ano =>  {
+        ano.textContent = new Date().getFullYear()
+    })
 // ANO ATUAL HOME E EXTRAS
+
+})
