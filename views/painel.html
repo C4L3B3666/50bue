@@ -8,23 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="bg-[radial-gradient(ellipse_at_bottom,#0F001A_10%,#000_100%)] h-screen flex items-center justify-center">
-    <nav class="border border-[#8080802a] rounded-2xl shadow-[0_0_15px_#000] w-[95vw] h-[95vh] overflow-hidden flex">
-        <nav class="flex flex-col justify-between border-r border-r-[#8080802a] w-62.5 h-full items-start px-8 py-6 text-[#F5F5F5]">
-            <nav class="flex flex-col gap-3">
+    <nav class="border border-[#8080802a] rounded-2xl shadow-[0_0_15px_#000] w-[95vw] h-[95vh] overflow-hidden relative flex">
+        <nav class="opcoesPainelUser">
+            <nav class="flex flex-col gap-3 w-full">
                 <a href="painel.html" class="font-bebas text-3xl mb-3"><span class="colorido">50</span>BUÉ<span class="colorido">.</span></a>
-                <nav class="flex flex-col items-start my-2 gap-7">
+                <nav class="flex flex-col items-start my-2 gap-4">
                     <button class="botao_side_painel">O Seu Painel</button>
-                    <button class="botao_side_painel">Números Ativados</button>
-                    <button class="botao_side_painel ativo">Pagamentos</button>
+                    <button class="botao_side_painel">Ativados</button>
+                    <button class="botao_side_painel ativo">Desbloqueados</button>
+                    <button class="botao_side_painel">Ranking</button>
                     <button class="botao_side_painel">Informações</button>
                     <button class="botao_side_painel">Segurança</button>
                     <button class="botao_side_painel">Comunidade</button>
                 </nav>
             </nav>
-            <!-- <div class="border-l border-l-[#8080802a] rounded-md p-2">
-                <h6 class="font-spartan font-bold text-3xl">Felizes por você!</h6>
-                <p class="font-roboto font-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, minus. Ratione placeat adipisci expedita, itaque minus vero quaerat aliquam?</p>
-            </div> -->
+
             <nav>
                 <div>
                     <button class="bg-red-500 shadow-[0_0_15px_red] rounded-2xl px-2 py-0.5 cursor-pointer font-roboto text-[11pt]">Quero Sair do Painel</button>
@@ -33,20 +31,25 @@
             </nav>
         </nav>
 
-        <nav class="text-[#F5F5F5] py-6 px-8 w-full">
-            <div class="flex items-center justify-between">
+        <nav class="text-[#F5F5F5] py-6 w-full backdrop-blur-md">
+            <div class="flex items-center justify-between flex-col text-center md:flex-row md:text-start px-8 relative">
                 <div>
                     <h2 class="font-spartan text-3xl font-bold">Olá, Ninja666!</h2>
                     <p class="font-roboto font-light text-[#F5F5F5] opacity-65">Que bom vê-lo novamente aqui, no seu painel.</p>
                 </div>
-                <div class="flex flex-col font-spartan">
+                <div class="flex gap-4 flex-wrap text-center items-center justify-center flex-row md:gap-0 md:flex-col font-spartan pt-2 md:pt-0">
                     <small class="font-bold text-green-400">Conta Verificada</small>
                     <small class="font-bold">Calebe Lukombo</small>
                     <small><span class="font-bold">ID50:</span> AXE50AJNKOPQ</small>
                 </div>
+                <div class="absolute right-4 z-50 md:hidden">
+                    <button class="botao scale-125 z-50" id="botaoOpcoesPainelUser">+</button>
+                </div>
             </div>
+
             <hr class="border border-[#8080802a] my-3 -ml-8 m-auto w-[200%]">
-            <div class="flex gap-3 w-max">
+
+            <div class="flex gap-3 flex-wrap items-center px-8 justify-center md:w-max">
 
                 <div class="card_info_painel">
                     <nav>
@@ -70,16 +73,6 @@
 
                 <div class="card_info_painel">
                     <nav>
-                        <h3 class="text_card_painel">Progresso</h3>
-                    </nav>
-                    <nav>
-                        <span class="dado_card_painel">45%</span>
-                    </nav>
-                    <div class="efeito_luz efeito_luz_card_painel"></div>
-                </div>
-
-                <div class="card_info_painel">
-                    <nav>
                         <h3 class="text_card_painel">Posição no Ranking</h3>
                     </nav>
                     <nav>
@@ -87,14 +80,121 @@
                     </nav>
                     <div class="efeito_luz efeito_luz_card_painel"></div>
                 </div>
+            </div>
+
+            <div class="card_opcao_painel">
+
+                <div class="cards_opcoes_painel">
+                    <div>
+                        <span class="dado_card_opcoes_painel">2 345</span>
+                    </div>
+                    <div>
+                        <h3 class="texto_dado_card_opcoes_painel">Números ativados</h3>
+                    </div>
+                </div>
+
+                <div class="cards_opcoes_painel">
+                    <div>
+                        <span class="dado_card_opcoes_painel">2 345 Kzs</span>
+                    </div>
+                    <div>
+                        <h3 class="texto_dado_card_opcoes_painel">Valor Desbloqueado</h3>
+                    </div>
+                </div>
+
+                <div class="cards_opcoes_painel">
+                    <div>
+                        <span class="dado_card_opcoes_painel">45%</span>
+                    </div>
+                    <div>
+                        <h3 class="texto_dado_card_opcoes_painel">O Seu Progresso</h3>
+                    </div>
+                </div>
+
+                <div class="cards_opcoes_painel">
+                    <div>
+                        <span class="dado_card_opcoes_painel">#45</span>
+                    </div>
+                    <div>
+                        <h3 class="texto_dado_card_opcoes_painel">Posição no Ranking</h3>
+                    </div>
+                </div>
 
             </div>
+
+            <div class="flex md:items-center md:justify-center flex-row hidden">
+                <div class="w-full md:w-[90%] md:flex-wrap md:items-center md:justify-center flex gap-2 overflow-x-scroll pl-8 pr-1">
+
+                    <div class="card_info_usuario_painel">
+                        <div>
+                            <h4 class="titulo_info_user_painel">Nome Completo</h3>
+                        </div>
+                        <div class="div_nome_info_user_painel">
+                            <span class="nome_info_user_painel">Calebe Lukombo</span>
+                        </div>
+                        <button class="botao_user_info_painel botao">Alterar Nome</button>
+                        <div class="efeito_luz efeito_luz_card_info_painel"></div>
+                    </div>
+                        
+                    <div class="card_info_usuario_painel">
+                        <div>
+                            <h4 class="titulo_info_user_painel">Alcunha/Apelido</h3>
+                        </div>
+                        <div class="div_nome_info_user_painel">
+                            <span class="nome_info_user_painel">Ninja666</span>
+                        </div>
+                        <button class="botao_user_info_painel botao">Alterar Alcunha/Apelido</button>
+                        <div class="efeito_luz efeito_luz_card_info_painel"></div>
+                    </div>
+                            
+                    <div class="card_info_usuario_painel">
+                        <div>
+                            <h4 class="titulo_info_user_painel">Número de Telefone</h3>
+                        </div>
+                        <div class="div_nome_info_user_painel">
+                            <span class="nome_info_user_painel">999 111 000</span>
+                        </div>
+                        <button class="botao_user_info_painel botao">Alterar Número</button>
+                        <div class="efeito_luz efeito_luz_card_info_painel"></div>
+                    </div>
+                                
+                    <div class="card_info_usuario_painel">
+                        <div>
+                            <h4 class="titulo_info_user_painel">Palavra-Passe</h3>
+                        </div>
+                        <div class="div_nome_info_user_painel">
+                            <span class="nome_info_user_painel">********</span>
+                        </div>
+                        <button class="botao_user_info_painel botao">Alterar Senha</button>
+                        <div class="efeito_luz efeito_luz_card_info_painel"></div>
+
+                    </div>
+                </div>
+                    
+            </div>
+
+            <div class="flex items-center flex-col gap-10 justify-center px-8 hidden">
+                <h4 class="font-spartan text-3xl md:text-5xl font-bold uppercase text-center">Você pode interagir e saber o que as outras pessoas estão falando sobre o 50BUÉ.!</h4>
+                <div class="flex gap-2 flex-col">
+                    <a href="#">Facebook</a>
+                    <a href="#">WhatsApp</a>
+                    <a href="#">Telegram</a>
+                </div>
+                    
+            </div>
+
         </nav>
+
+        <img src="../assets/img/img1.png" alt="imagem decorativa painel" class="absolute -z-10 opacity-45 pointer-events-none md:left-70 top-100 md:top-70">
     </nav>
 
     <script>
         document.querySelectorAll(".ano_atual").forEach(ano =>  {
             ano.textContent = new Date().getFullYear();
+        })
+
+        document.querySelector("#botaoOpcoesPainelUser").addEventListener("click", ()=> {
+            document.querySelector(".opcoesPainelUser").classList.toggle("ativo")
         })
     </script>
 </body>

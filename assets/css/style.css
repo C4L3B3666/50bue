@@ -334,12 +334,20 @@ header.ativado .menu_mobile  {
 
 /* PAINEL USUÁRIO E ADMINISTRADOR  */
 
+.opcoesPainelUser {
+    @apply flex flex-col justify-between border-r border-r-[#8080802a] w-full md:w-62.5 h-full items-start px-8 py-6 text-[#F5F5F5] absolute z-10 md:static md:bg-transparent bg-[#0d0d0dce] backdrop-blur-sm rounded-2xl md:rounded-none translate-x-full pointer-events-none opacity-0 md:opacity-100 md:translate-x-0 md:pointer-events-auto duration-500 ease-in
+}
+
+.opcoesPainelUser.ativo {
+    @apply translate-x-0 pointer-events-auto opacity-100
+}
+
 .botao_side_painel {
-    @apply font-spartan uppercase font-semibold opacity-65
+    @apply font-spartan uppercase font-semibold opacity-65 p-1 cursor-pointer hover:opacity-85
 }
 
 .botao_side_painel.ativo {
-    @apply opacity-100
+    @apply opacity-100 hover:opacity-100
 }
 
 .card_info_painel {
@@ -358,4 +366,43 @@ header.ativado .menu_mobile  {
     @apply absolute left-23 top-22
 }
 
+.card_opcao_painel {
+    @apply flex flex-col items-center justify-center mt-8 px-8
+}
+
+.cards_opcoes_painel {
+    @apply flex gap-10 mt-16 md:mt-16 items-center md:gap-48 flex-col text-center nth-[1]:hidden nth-[2]:hidden nth-[3]:hidden nth-[4]:hidden
+}
+
+.dado_card_opcoes_painel {
+    @apply font-spartan text-transparent text-[70px] md:text-[95px] font-bold bg-clip-text bg-[linear-gradient(90deg,#F5F5F5_0%,#B0B0B0_50%,#A0A0A0_100%)]
+}
+
+.texto_dado_card_opcoes_painel {
+    @apply text-[#F5F5F5] font-spartan text-5xl md:text-8xl font-bold uppercase
+}
+
+.card_info_usuario_painel {
+    @apply min-w-65 md:w-96 h-55 md:h-70 border border-[#8080802a] rounded-2xl shadow-[0_0_5px_#000] overflow-hidden p-3 text-center flex items-center flex-col  
+}
+
+.efeito_luz_card_info_painel {
+    @apply opacity-30
+}
+
+.titulo_info_user_painel {
+    @apply font-spartan font-bold text-[20px] md:text-4xl mt-3 text-transparent bg-clip-text bg-[linear-gradient(90deg,#F5F5F5_0%,#B0B0B0_50%,#A0A0A0_100%)] uppercase
+}
+
+.div_nome_info_user_painel {
+    @apply my-7
+}
+
+.nome_info_user_painel {
+    @apply font-spartan text-[18px] md:text-3xl font-semibold
+}
+
+.botao_user_info_painel {
+    @apply hover:scale-125
+}
 /* PAINEL USUÁRIO E ADMINISTRADOR  */
