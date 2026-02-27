@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", ()=> {
+window.addEventListener("load", ()=> {
 
 const menu = document.querySelector("header")
 const corpo = document.querySelector("body")
@@ -32,7 +32,7 @@ if (preloader) {
         }
         
         setTimeout(() => {
-            preloader.style.display = "none";
+            preloader.classList.add("ok")
         }, 1000); 
     }, 500); 
 }

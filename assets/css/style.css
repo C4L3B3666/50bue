@@ -7,6 +7,10 @@
     --font-spartan: "League Spartan", system-ui, sans-serif;
 }
 
+#carregamento.hide {
+    @apply opacity-0 pointer-events-none -z-50
+}
+
 .colorido {
     @apply text-[#CB6CE6]
 }
