@@ -20,6 +20,24 @@ document.querySelectorAll(".opcao_menu").forEach(link => {
 })
 // EFEITO MENU OCULTO 
 
+// EFEITO CARREGAMENTO (PRELOADER) 
+const preloader = document.getElementById("carregamento");
+if (preloader) {
+    setTimeout(() => {
+        preloader.classList.add("hide");
+        
+        if (preloader.classList.contains("hide")) {
+            document.querySelector("body").classList.remove("overflow-hidden")
+            document.querySelector("body").classList.add("overflow-x-hidden")
+        }
+        
+        setTimeout(() => {
+            preloader.style.display = "none";
+        }, 1000); 
+    }, 500); 
+}
+// EFEITO CARREGAMENTO (PRELOADER) 
+
 // EFEITO COLORIR TEXTO
 const textoEfeito = document.querySelectorAll(".texto_efeito_colorir")
 const colorirTexto = ()=> {

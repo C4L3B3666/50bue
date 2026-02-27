@@ -2,7 +2,7 @@
 <html lang="pt-AO">
 <head>
     <meta charset="UTF-8">
-    <title>50BUÉ. | O Seu Painel</title>
+    <title>50BUÉ. | O Seu Painel.</title>
     <script src="../assets/script/script.js"></script>
     <link rel="stylesheet" href="../assets/css/output.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,6 +29,9 @@
                 </div>
                 <p class="text-[#F5F5F5] opacity-65 font-light font-roboto text-[13px] mt-3">&copy;<span class="ano_atual"></span> <br> <a class="font-bold hover:underline">DominusCode&trade;</a> <br> Todos os direitos reservados.</p>
             </nav>
+            <div class="absolute right-4 md:hidden">
+                <button class="botao scale-125" id="botaoOpcoesPainelUserClose">—</button>
+            </div>
         </nav>
 
         <nav class="text-[#F5F5F5] py-6 w-full backdrop-blur-md">
@@ -42,14 +45,14 @@
                     <small class="font-bold">Calebe Lukombo</small>
                     <small><span class="font-bold">ID50:</span> AXE50AJNKOPQ</small>
                 </div>
-                <div class="absolute right-4 z-50 md:hidden">
-                    <button class="botao scale-125 z-50" id="botaoOpcoesPainelUser">+</button>
+                <div class="absolute right-4 md:hidden">
+                    <button class="botao scale-125" id="botaoOpcoesPainelUser">+</button>
                 </div>
             </div>
 
             <hr class="border border-[#8080802a] my-3 -ml-8 m-auto w-[200%]">
 
-            <div class="flex gap-3 flex-wrap items-center px-8 justify-center md:w-max">
+            <div class="flex gap-3 flex-wrap items-center px-8 justify-center lg:w-max">
 
                 <div class="card_info_painel">
                     <nav>
@@ -122,7 +125,7 @@
 
             </div>
 
-            <div class="flex md:items-center md:justify-center flex-row hidden">
+            <div class="md:items-center md:justify-center flex-row hidden">
                 <div class="w-full md:w-[90%] md:flex-wrap md:items-center md:justify-center flex gap-2 overflow-x-scroll pl-8 pr-1">
 
                     <div class="card_info_usuario_painel">
@@ -173,7 +176,7 @@
                     
             </div>
 
-            <div class="flex items-center flex-col gap-10 justify-center px-8 hidden">
+            <div class="items-center flex-col gap-10 justify-center px-8 hidden">
                 <h4 class="font-spartan text-3xl md:text-5xl font-bold uppercase text-center">Você pode interagir e saber o que as outras pessoas estão falando sobre o 50BUÉ.!</h4>
                 <div class="flex gap-2 flex-col">
                     <a href="#">Facebook</a>
@@ -194,7 +197,11 @@
         })
 
         document.querySelector("#botaoOpcoesPainelUser").addEventListener("click", ()=> {
-            document.querySelector(".opcoesPainelUser").classList.toggle("ativo")
+            document.querySelector(".opcoesPainelUser").classList.add("ativo")
+        })
+
+        document.querySelector("#botaoOpcoesPainelUserClose").addEventListener("click", ()=> {
+            document.querySelector(".opcoesPainelUser").classList.remove("ativo")
         })
     </script>
 </body>

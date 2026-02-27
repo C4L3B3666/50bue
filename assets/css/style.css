@@ -351,7 +351,7 @@ header.ativado .menu_mobile  {
 }
 
 .card_info_painel {
-    @apply border border-[#8080802a] w-60 p-4 h-28 flex flex-col justify-between rounded-md relative overflow-hidden
+    @apply border border-[#8080802a] w-60 p-4 h-28 flex flex-col justify-between rounded-md relative overflow-hidden text-center md:text-start
 }
 
 .text_card_painel {
@@ -383,7 +383,7 @@ header.ativado .menu_mobile  {
 }
 
 .card_info_usuario_painel {
-    @apply min-w-65 md:w-96 h-55 md:h-70 border border-[#8080802a] rounded-2xl shadow-[0_0_5px_#000] overflow-hidden p-3 text-center flex items-center flex-col  
+    @apply min-w-65 md:w-96 h-55 md:h-70 border border-[#8080802a] rounded-2xl shadow-[0_0_5px_#000] overflow-hidden p-3 text-center flex items-center flex-col
 }
 
 .efeito_luz_card_info_painel {
@@ -404,5 +404,22 @@ header.ativado .menu_mobile  {
 
 .botao_user_info_painel {
     @apply hover:scale-125
+}
+
+.tr_tabela_user_adm {
+    @apply  border border-[#808080af]
+}
+
+.tr_tabela_user_adm td, 
+.tr_tabela_user_adm th {
+    @apply border border-[#808080af] text-center p-1
+}
+
+.tr_tabela_user_adm th {
+    @apply font-spartan uppercase font-semibold opacity-75
+}
+
+.tr_tabela_user_adm td {
+    @apply font-spartan font-medium
 }
 /* PAINEL USUÁRIO E ADMINISTRADOR  */
