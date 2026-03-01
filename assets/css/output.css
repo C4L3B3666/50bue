@@ -2523,6 +2523,26 @@ header.ativado .menu_mobile {
   --tw-ease: var(--ease-in);
   transition-timing-function: var(--ease-in);
 }
+.form_auth {
+  overflow: hidden;
+  transition-property: opacity .5s ease,transform 0.5s ease,max-height 0.6s ease;
+  transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+  transition-duration: var(--tw-duration, var(--default-transition-duration));
+}
+.form_auth:not(.ativo) {
+  pointer-events: none;
+  max-height: calc(var(--spacing) * 0);
+  --tw-translate-x: calc(var(--spacing) * 2.5);
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+  opacity: 0%;
+}
+.form_auth.ativo {
+  pointer-events: auto;
+  max-height: max-content;
+  --tw-translate-x: calc(var(--spacing) * 0);
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+  opacity: 100%;
+}
 .nav_inputs_label {
   position: relative;
   display: flex;

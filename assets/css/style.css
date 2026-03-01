@@ -319,6 +319,18 @@ header.ativado .menu_mobile  {
     @apply bg-[radial-gradient(ellipse_at_bottom,#0F001A_10%,#000_100%)] flex items-center justify-center h-screen w-screen absolute top-0 gap-3.5 duration-700 ease-in
 }
 
+.form_auth {
+    @apply overflow-hidden transition-[opacity_.5s_ease,transform_0.5s_ease,max-height_0.6s_ease]
+}
+
+.form_auth:not(.ativo) {
+    @apply opacity-0 translate-x-2.5 max-h-0 pointer-events-none    
+}
+
+.form_auth.ativo {
+    @apply opacity-100 translate-x-0 max-h-max pointer-events-auto
+}
+
 .nav_inputs_label {
     @apply flex flex-col relative
 }
