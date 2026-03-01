@@ -305,12 +305,6 @@
   .mt-11 {
     margin-top: calc(var(--spacing) * 11);
   }
-  .mt-50 {
-    margin-top: calc(var(--spacing) * 50);
-  }
-  .mt-60 {
-    margin-top: calc(var(--spacing) * 60);
-  }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
   }
