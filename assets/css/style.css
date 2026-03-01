@@ -7,9 +7,39 @@
     --font-spartan: "League Spartan", system-ui, sans-serif;
 }
 
+/* PRELOADER  */
 #carregamento.hide {
-    @apply opacity-0 pointer-events-none -z-50
+    @apply pointer-events-none -z-50 opacity-0
 }
+
+@keyframes forma {
+    0%, 100% {
+        border-radius: 60% 40% 65% 35% / 50% 60% 40% 50%;
+    }
+    50% {
+        border-radius: 40% 60% 35% 35% / 60% 40% 60% 40%;
+    }
+}
+
+@keyframes rotacao {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes flutuacao {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* PRELOADER  */
 
 .colorido {
     @apply text-[#CB6CE6]

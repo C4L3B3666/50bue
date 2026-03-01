@@ -33,7 +33,7 @@ if (preloader) {
         
         setTimeout(() => {
             preloader.classList.add("ok")
-        }, 1000); 
+        }, 2000); 
     }, 500); 
 }
 // EFEITO CARREGAMENTO (PRELOADER) 
