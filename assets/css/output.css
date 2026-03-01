@@ -38,7 +38,6 @@
     --radius-4xl: 2rem;
     --ease-in: cubic-bezier(0.4, 0, 1, 1);
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
-    --animate-spin: spin 1s linear infinite;
     --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
     --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     --animate-bounce: bounce 1s infinite;
@@ -410,9 +409,6 @@
   }
   .animate-ping {
     animation: var(--animate-ping);
-  }
-  .animate-spin {
-    animation: var(--animate-spin);
   }
   .cursor-pointer {
     cursor: pointer;
@@ -1911,6 +1907,7 @@ header.ativado .menu_mobile {
   }
 }
 .label_numero_selecionado {
+  display: flex;
   border-radius: calc(infinity * 1px);
   border-style: var(--tw-border-style);
   border-width: 1px;
@@ -1925,6 +1922,10 @@ header.ativado .menu_mobile {
   color: #F5F5F5;
   --tw-shadow: 0 0 15px var(--tw-shadow-color, #cb6ce6e6);
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.label_numero_selecionado i {
+  font-size: 10px;
+  opacity: 90%;
 }
 .label_gerar_numero {
   font-family: var(--font-spartan);
@@ -3102,11 +3103,6 @@ header.ativado .menu_mobile {
   syntax: "*";
   inherits: false;
   initial-value: 0;
-}
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
 }
 @keyframes ping {
   75%, 100% {
