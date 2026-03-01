@@ -284,6 +284,9 @@
   .mt-1\.5 {
     margin-top: calc(var(--spacing) * 1.5);
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
@@ -1908,6 +1911,8 @@ header.ativado .menu_mobile {
 }
 .label_numero_selecionado {
   display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: calc(infinity * 1px);
   border-style: var(--tw-border-style);
   border-width: 1px;
